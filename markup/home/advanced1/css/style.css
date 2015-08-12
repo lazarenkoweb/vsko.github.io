@@ -50,20 +50,28 @@ h1,h2,h3,p,ul {
 .header .top .menu {
     font: 14px 'Droid Sans';
     list-style-type: none;
+    margin-right: 50px;
     float: right;
 }
 
 .header .top .menu li {
+    padding-right: 32px;
     display: inline-block;
 }
 
 .header .top .menu a {
-
+    color: #fff;
+    line-height: 100px;
+    text-transform: uppercase;
+    display: block;
 }
 
 .header .top .menu .active,
 .header .top .menu a:hover {
-    font-weight: bold;
+    color: #4bcaff;
+    /*font-weight: 900;*/
+    outline: none;
+    border-top: 2px #4bcaff solid;
 }
 
 .header #slider {
@@ -104,7 +112,7 @@ h1,h2,h3,p,ul {
 .header .slide1 .content .heading {
     font-size: 48px;
     margin-top: 40px;
-    margin-bottom: 28px;
+    margin-bottom: 19px;
 }
 
 .header .slide1 .content .text {
@@ -140,7 +148,7 @@ h1,h2,h3,p,ul {
     font-size: 18px;
     clear: both;
     overflow: hidden;
-    margin-top: 56px;
+    margin-top: 53px;
 }
 
 .header .slide1 .content .label .text {
@@ -165,7 +173,7 @@ h1,h2,h3,p,ul {
 }
 
 .header .slide1 .content .nav {
-    margin-top: 64px;
+    margin-top: 74px;
     margin-left: 53px;
     overflow: hidden;
 }
@@ -677,17 +685,19 @@ h1,h2,h3,p,ul {
 
 .footer {
     background: #414042;
-}
-
-.footer a {
-    color: #fefefe;
-    font-size: 12px;
-    height: 110px;
     overflow: hidden;
 }
 
 .footer .copy,
+.footer a {
+    color: #fefefe;
+    font-size: 12px;
+}
+
+.footer .copy,
 .footer .links {
+
+    height: 110px;
     line-height: 110px;
     opacity: 0.25;
 }
