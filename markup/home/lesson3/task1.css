@@ -1,0 +1,48 @@
+h1 {
+    text-align: right;
+}
+
+h1,h2 {
+    color: orange;
+}
+
+h2:last-of-type {
+    color: blue;
+}
+
+.text:first-letter {
+    color: red;
+    font-size: 30px;
+}
+
+.text mark {
+    color: #fff;
+    font-style: italic;
+    background-color: green;
+}
+
+ul li span {
+    font-weight: bold;
+}
+
+li ol li {
+    color: red;
+}
+
+#menu1 li:first-child ol li {
+    color: gray;
+}
+
+#menu2 li:first-child ol li {
+    color: green;
+}
+
+table td:first-of-type {
+    color: orange;
+}
+
+table td + td {
+    color: #fff;
+    background: green;
+    text-align: center;
+}
