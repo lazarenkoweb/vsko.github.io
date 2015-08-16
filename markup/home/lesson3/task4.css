@@ -1,0 +1,21 @@
+a {
+    font-size: 30px;
+}
+
+a[href^='http'] {
+    color: #f70;
+}
+
+a[href*='google.com'] {
+    color: #666;
+    text-transform: rotate(90deg);
+}
+
+a[target='_blank']:after {
+    content: '\21F1';
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 15px;
+    transform: rotate(90deg);
+}
