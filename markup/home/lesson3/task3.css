@@ -1,0 +1,18 @@
+.main p:first-child + img {
+    border: 3px orange solid;
+}
+
+.main em:only-child {
+    color: blue;
+    font-family: Arial;
+    letter-spacing: 2px;
+}
+
+.main h1:not(.heading) {
+    color: green;
+    font-size: 32px;
+}
+
+h1 {
+    color: red;
+}
