@@ -74,11 +74,11 @@ h1,h2,h3,p,ul {
     border-top: 2px #4bcaff solid;
 }
 
-.header #slider {
+.header #slider-top {
     position: relative;
 }
 
-.header #slider .arrow {
+.header #slider-top .arrow {
     width: 55px;
     height: 55px;
     cursor: pointer;
@@ -86,12 +86,12 @@ h1,h2,h3,p,ul {
     top: 272px;
 }
 
-.header #slider .arrow.left {
+.header #slider-top .arrow.left {
     left: 70px;
     background: url('../images/slider-arrow-left.png') no-repeat;
 }
 
-.header #slider .arrow.right {
+.header #slider-top .arrow.right {
     right: 70px;
     background: url('../images/slider-arrow-right.png') no-repeat;
 }
