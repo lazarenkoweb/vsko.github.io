@@ -15,23 +15,19 @@
                     $('#gitinfo').html("<h2>No User Info Found</h2>");
                 }
                 else {
-                    var fullname   = json.name;
-                    var username   = json.login;
-                    var aviurl     = json.avatar_url;
-                    var profileurl = json.html_url;
-                    var location   = json.location;
-                    var followersnum = json.followers;
-                    var followingnum = json.following;
-                    var reposnum     = json.public_repos;
+                    var name       = json.name;
+                    var login      = json.login;
+                    var avatar_url = json.avatar_url;
+                    var html_url   = json.html_url;
+                    var outhtml    = '';
+                    var repositories;
 
-                    if(fullname == undefined) { fullname = username; }
+                    if(name == undefined) { name = login; }
 
-                    var outhtml = '';
-                    outhtml = outhtml + '<div class="content"><a href="'+profileurl+'" target="_blank"><img src="'+aviurl+'" width="80" height="80" alt="'+username+'"></a>';
-                    outhtml = outhtml + '<h2>'+fullname+'</h2>';
+                    outhtml = outhtml + '<div class="content"><a href="'+html_url+'" target="_blank"><img src="'+avatar_url+'" width="80" height="80" alt="'+login+'"></a>';
+                    outhtml = outhtml + '<h2 class="name">'+name+'</h2>';
                     outhtml = outhtml + '<div class="repolist">';
 
-                    var repositories;
                     $.getJSON(repouri, function(json){
                         repositories = json;
                         outputPageContent();
