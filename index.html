@@ -12,7 +12,7 @@
 
             requestJSON(requri, function(json) {
                 if(json.message == "Not Found" || username == '') {
-                    $('#ghapidata').html("<h2>No User Info Found</h2>");
+                    $('#gitinfo').html("<h2>No User Info Found</h2>");
                 }
                 else {
                     var fullname   = json.name;
@@ -26,10 +26,10 @@
 
                     if(fullname == undefined) { fullname = username; }
 
-                    var outhtml = '<h2>'+fullname+' <span class="smallname">(@<a href="'+profileurl+'" target="_blank">'+username+'</a>)</span></h2>';
-                    outhtml = outhtml + '<div class="ghcontent"><div class="avi"><a href="'+profileurl+'" target="_blank"><img src="'+aviurl+'" width="80" height="80" alt="'+username+'"></a></div>';
-                    outhtml = outhtml + '<p>Followers: '+followersnum+' - Following: '+followingnum+'<br>Repos: '+reposnum+'</p></div>';
-                    outhtml = outhtml + '<div class="repolist clearfix">';
+                    var outhtml = '';
+                    outhtml = outhtml + '<div class="content"><a href="'+profileurl+'" target="_blank"><img src="'+aviurl+'" width="80" height="80" alt="'+username+'"></a>';
+                    outhtml = outhtml + '<h2>'+fullname+'</h2>';
+                    outhtml = outhtml + '<div class="repolist">';
 
                     var repositories;
                     $.getJSON(repouri, function(json){
@@ -40,13 +40,13 @@
                     function outputPageContent() {
                         if(repositories.length == 0) { outhtml = outhtml + '<p>No repos!</p></div>'; }
                         else {
-                            outhtml = outhtml + '<p><strong>Repos List:</strong></p> <ul>';
+                            outhtml = outhtml + '<p>Repositories:</p><ul>';
                             $.each(repositories, function(index) {
                                 outhtml = outhtml + '<li><a href="'+repositories[index].html_url+'" target="_blank">'+repositories[index].name + '</a></li>';
                             });
                             outhtml = outhtml + '</ul></div>';
                         }
-                        $('#ghapidata').html(outhtml);
+                        $('#gitinfo').html(outhtml);
                     }
                 }
             });
@@ -63,13 +63,43 @@
     </script>
     <style>
         @font-face { font-family: 'Noto Sans'; src: local('Noto Sans'), local('NotoSans'), url('http://64424.selcdn.ru/webfont/noto/notosans-regular.woff') format('woff'); font-weight: 400; font-style: normal; }
-        h1 { font: 200% 'Noto Sans', sans-serif; text-align: center; margin-top: 20%; }
-        h1::before { color: #ccc; content: 'vsko'; }
-        h1::after { color: #d88c8c; content: 'io'; }
+        body { font-family: 'Noto Sans', sans-serif; }
+        h1,h2,p,ul { margin: 0; }
+        a { color: #a8a8a8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .title { font-size: 200%; text-align: center; margin-top: 10%; }
+        .title::before { color: #ccc; content: 'vsko'; }
+        .title::after { color: #d88c8c; content: 'io'; }
+        #gitinfo {
+            font-family: Arial, sans-serif;
+            width: 20%;
+            min-width: 320px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #fafafa;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            text-align: center;
+            -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15);
+            -moz-box-shadow:    inset 1px 1px 0 0 rgba(0, 0, 0, 0.15);
+            box-shadow:         inset 1px 1px 0 0 rgba(0, 0, 0, 0.15);
+        }
+        #gitinfo h2 {
+            font-size: 23px;
+        }
+        #gitinfo p {
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        #gitinfo li {
+            display: inline-block;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>.github.</h1>
-    <div id="ghapidata"></div>
+    <h1 class="title">.github.</h1>
+    <div id="gitinfo"></div>
 </body>
 </html>
