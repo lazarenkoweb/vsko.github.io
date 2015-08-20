@@ -12,7 +12,7 @@
 
             requestJSON(requri, function(json) {
                 if(json.message == "Not Found" || username == '') {
-                    $('#gitinfo').html("<h2>No User Info Found</h2>");
+                    $('.gitinfo').html("<h2>No User Info Found</h2>");
                 }
                 else {
                     var name       = json.name;
@@ -42,7 +42,7 @@
                             });
                             outhtml = outhtml + '</ul></div>';
                         }
-                        $('#gitinfo').html(outhtml);
+                        $('.gitinfo').html(outhtml);
                     }
                 }
             });
@@ -66,36 +66,14 @@
         .title { font-size: 200%; text-align: center; margin-top: 10%; }
         .title::before { color: #a8a8a8; content: 'vsko'; }
         .title::after { color: #d88c8c; content: 'io'; }
-        #gitinfo {
-            font-family: Arial, sans-serif;
-            width: 20%;
-            min-width: 320px;
-            margin: 50px auto;
-            padding: 30px;
-            background: #fafafa;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            border-radius: 4px;
-            text-align: center;
-            -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15);
-            -moz-box-shadow:    inset 1px 1px 0 0 rgba(0, 0, 0, 0.15);
-            box-shadow:         inset 1px 1px 0 0 rgba(0, 0, 0, 0.15);
-        }
-        #gitinfo h2 {
-            font-size: 23px;
-        }
-        #gitinfo p {
-            margin-top: 20px;
-            margin-bottom: 5px;
-        }
-        #gitinfo li {
-            display: inline-block;
-            margin-right: 10px;
-        }
+        .gitinfo { font-family: Arial, sans-serif; width: 20%; min-width: 320px; margin: 50px auto; padding: 30px; background: #fafafa; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; text-align: center; -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15); -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15); box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15); }
+        .gitinfo h2 { font-size: 23px; }
+        .gitinfo p { margin-top: 20px; margin-bottom: 5px; }
+        .gitinfo li { display: inline-block; margin-right: 10px; }
     </style>
 </head>
 <body>
     <h1 class="title">.github.</h1>
-    <div id="gitinfo"></div>
+    <div class="gitinfo"></div>
 </body>
 </html>
