@@ -1,9 +1,18 @@
 .menu {
     width: 900px;
     margin: 0 auto;
-    display: block;
     background: #b400ff;
     box-shadow: 1px 1px 8px rgba(0,0,0,.2);
+    display: block;
+}
+
+.menu a {
+    color: #fff;
+    font: 18px Impact, sans-serif;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
 }
 
 .menu .nav {
@@ -14,9 +23,6 @@
 .menu .nav li {
     margin: 0;
     padding: 0;
-}
-
-.menu li {
     display: inline-block;
 }
 
@@ -25,13 +31,7 @@
 }
 
 .menu .nav a {
-    color: #fff;
-    font: 18px Impact, sans-serif;
-    line-height: 40px;
-    text-transform: uppercase;
-    text-decoration: none;
     padding: 0 15px;
-    display: block;
 }
 
 .menu .nav a.active,
