@@ -1,0 +1,38 @@
+.menu {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+    list-style-type: none;
+    background: #b400ff;
+    box-shadow: 1px 1px 8px rgba(0,0,0,.2);
+}
+
+.menu ul,
+.menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li:first-child {
+    margin-left: 50px;
+}
+
+.menu a {
+    color: #fff;
+    font: 18px Impact, sans-serif;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 15px;
+    display: block;
+}
+
+.menu a.active,
+.menu a:hover {
+    color: #aaa;
+    background: #eee;
+}
