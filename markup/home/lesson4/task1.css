@@ -2,13 +2,16 @@
     width: 900px;
     margin: 0 auto;
     display: block;
-    list-style-type: none;
     background: #b400ff;
     box-shadow: 1px 1px 8px rgba(0,0,0,.2);
 }
 
-.menu ul,
-.menu li {
+.menu .nav {
+    list-style-type: none;
+}
+
+.menu .nav,
+.menu .nav li {
     margin: 0;
     padding: 0;
 }
@@ -18,10 +21,10 @@
 }
 
 .menu li:first-child {
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
-.menu a {
+.menu .nav a {
     color: #fff;
     font: 18px Impact, sans-serif;
     line-height: 40px;
@@ -31,8 +34,8 @@
     display: block;
 }
 
-.menu a.active,
-.menu a:hover {
+.menu .nav a.active,
+.menu .nav a:hover {
     color: #aaa;
     background: #eee;
 }
