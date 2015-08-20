@@ -1,0 +1,73 @@
+.menu {
+    width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #b400ff;
+    box-shadow: 1px 1px 8px rgba(0,0,0,.2);
+}
+
+.menu .nav {
+
+}
+
+.menu .nav {
+    float: left;
+    display: block;
+    list-style-type: none;
+}
+
+.menu .nav,
+.menu .nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu .nav {
+    float: left;
+}
+
+.menu .nav li {
+    float: left;
+}
+
+.menu .nav li:first-child {
+    margin-left: 70px;
+}
+
+.menu .nav a,
+.menu .more a {
+    color: #fff;
+    font: 18px Impact, sans-serif;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 16px;
+    display: block;
+}
+
+.menu .nav a.active,
+.menu .nav a:hover {
+    color: #aaa;
+    background: #eee;
+}
+
+.menu .more {
+    float: right;
+    display: block;
+    margin-right: 55px;
+}
+
+.menu .more a.active,
+.menu .more a:hover {
+    text-decoration: underline;
+}
+
+.menu .nav.left,
+.menu .more.left {
+    float: left;
+}
+
+.menu .nav.right,
+.menu .more.right {
+    float: right;
+}
