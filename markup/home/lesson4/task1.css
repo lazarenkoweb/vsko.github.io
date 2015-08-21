@@ -1,9 +1,12 @@
+body,ul,li {
+    margin: 0;
+}
+
 .menu {
-    width: 900px;
-    margin: 0 auto;
+    text-align: center;
+    width: 100%;
     background: #b400ff;
-    box-shadow: 1px 1px 8px rgba(0,0,0,.2);
-    display: block;
+    box-shadow: 1px 1px 8px rgba(100,100,100,.2);
 }
 
 .menu a {
@@ -16,13 +19,13 @@
 }
 
 .menu .nav {
+    width: 900px;
+    margin: 0 auto;
     list-style-type: none;
 }
 
 .menu .nav,
 .menu .nav li {
-    margin: 0;
-    padding: 0;
     display: inline-block;
 }
 
