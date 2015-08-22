@@ -5,6 +5,7 @@ body,ul,li {
 .menu {
     text-align: center;
     background: #1aa4ff;
+    box-shadow: 0 2px 2px rgba(100,100,100,.2);
 }
 
 .menu a {
@@ -25,7 +26,7 @@ body,ul,li {
 .menu .spacer {
     height: 32px;
     background: #eee;
-    box-shadow: 0 2px 2px rgba(100,100,100,.2);
+    display: none;
 }
 
 .menu .nav,
@@ -64,5 +65,9 @@ body,ul,li {
     font-size: 12px;
     line-height: 32px;
     text-transform: none;
+    display: block;
+}
+
+.menu .nav:hover + .spacer {
     display: block;
 }
