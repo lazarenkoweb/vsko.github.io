@@ -11,7 +11,7 @@ body,ul,li {
 
 .menu a {
     color: #fff;
-    font: 18px Impact, sans-serif;
+    font: bold 20px Economica, sans-serif;
     line-height: 40px;
     text-transform: uppercase;
     text-decoration: none;
@@ -25,10 +25,6 @@ body,ul,li {
 .menu .nav li {
     padding: 0;
     float: left;
-}
-
-.menu .nav li:first-child {
-    margin-left: 70px;
 }
 
 .menu .nav a,
