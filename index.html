@@ -24,7 +24,7 @@
 
                     if(name == undefined) { name = login; }
 
-                    outhtml = outhtml + '<div class="content"><a href="'+html_url+'" target="_blank"><img src="'+avatar_url+'" width="80" height="80" alt="'+login+'"></a>';
+                    outhtml = outhtml + '<div class="content"><a href="'+html_url+'" target="_blank"><img src="'+avatar_url+'" width="120" height="120" alt="'+login+'"></a>';
                     outhtml = outhtml + '<h2 class="name">'+name+'</h2>';
                     outhtml = outhtml + '<div class="repolist">';
 
@@ -58,16 +58,17 @@
         }
     </script>
     <style>
+        @import "http://webfonts.ru/import/marck.css";
         @font-face { font-family: 'Noto Sans'; src: local('Noto Sans'), local('NotoSans'), url('http://64424.selcdn.ru/webfont/noto/notosans-regular.woff') format('woff'); font-weight: 400; font-style: normal; }
-        body { font-family: 'Noto Sans', sans-serif; }
+        body { background: #3c3c3c; font-family: Arial, sans-serif; }
         h1,h2,p,ul { margin: 0; }
         a { color: #a8a8a8; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .title { font-size: 200%; text-align: center; margin-top: 10%; }
+        .title { font-size: 150%; text-align: center; margin-top: 10%; }
         .title::before { color: #a8a8a8; content: 'vsko'; }
-        .title::after { color: #d88c8c; content: 'io'; }
-        .gitinfo { font-family: Arial, sans-serif; width: 20%; min-width: 320px; margin: 50px auto; padding: 30px; background: #fafafa; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; text-align: center; -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15); -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15); box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15); }
-        .gitinfo h2 { font-size: 23px; }
+        .title::after { color: #a28cd8; content: 'io'; }
+        .gitinfo { width: 20%; min-width: 320px; margin: 50px auto; padding: 30px; background: #fff; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; text-align: center; -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15); -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15); box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15); }
+        .gitinfo h2 { font-size: 35px; font-family: 'Marck Script', sans-serif; }
         .gitinfo p { margin-top: 20px; margin-bottom: 5px; }
         .gitinfo li { display: inline-block; margin-right: 10px; }
     </style>
