@@ -10,7 +10,7 @@ body,ul,li {
 
 .menu a {
     color: #fff;
-    font: 18px Impact, sans-serif;
+    font: 20px Economica, sans-serif;
     line-height: 40px;
     text-transform: uppercase;
     text-decoration: none;
@@ -40,6 +40,7 @@ body,ul,li {
     padding: 0 15px;
 }
 
+.menu .nav li:hover > ul,
 .menu .nav li:hover a {
     color: #aaa;
     background: #eee;
@@ -51,12 +52,12 @@ body,ul,li {
 }
 
 .menu .nav li:hover > ul {
+    width: 100%;
     margin: 0;
     display: block;
     position: absolute;
     top: 40px;
     left: 0;
-    width: 100%;
 }
 
 .menu .nav li:hover > ul li a {
