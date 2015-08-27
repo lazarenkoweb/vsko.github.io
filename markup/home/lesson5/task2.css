@@ -1,12 +1,12 @@
 .offer {
-    box-shadow: 1px 1px 8px rgba(0,0,0,.4);
     font-family: Economica;
     width: 296px;
     background: #ff7b04;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     padding-bottom: 4px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,.4);
 }
 
 .offer .head,
@@ -20,7 +20,7 @@
     color: #fff;
     text-align: center;
     letter-spacing: 1px;
-    padding: 25px 0;
+    padding: 24px 0;
 }
 
 .offer .body {
@@ -84,8 +84,8 @@
     margin: 0 18px;
     padding: 11px 0;
     background: #ff7b04;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     border-bottom: 3px #c24f00 solid;
 }
