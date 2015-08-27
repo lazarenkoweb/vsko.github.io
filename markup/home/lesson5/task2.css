@@ -1,7 +1,7 @@
 .offer {
     box-shadow: 1px 1px 8px rgba(0,0,0,.4);
     font-family: Economica;
-    width: 298px;
+    width: 296px;
     background: #ff7b04;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -12,12 +12,12 @@
 .offer .head,
 .offer .body .title {
     font-size: 25px;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 .offer .head {
     color: #fff;
-    font: bold 25px Economica;
     text-align: center;
     letter-spacing: 1px;
     padding: 25px 0;
@@ -81,7 +81,7 @@
     text-decoration: none;
     text-align: center;
     display: block;
-    margin: 0 10px;
+    margin: 0 18px;
     padding: 11px 0;
     background: #ff7b04;
     -webkit-border-radius: 4px;
