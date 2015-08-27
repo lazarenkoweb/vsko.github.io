@@ -15,13 +15,13 @@ body {
 }
 
 .offers {
-    width: 894px;
+    width: 880px;
     margin: 0 auto;
     overflow: hidden;
 }
 
 .offers > div {
-    width: 298px;
+    width: 296px;
     float: left;
 }
 
@@ -147,6 +147,7 @@ body {
 
 .offers > .standard,
 .offers > .ultimate {
+    width: 292px;
     margin-top: 15px;
 }
 
