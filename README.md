@@ -1,1 +1,2 @@
-# GoFrontend homeworks - Vitaliy Skorobagatko
+# GoFrontend homeworks
+## Vitaliy Skorobagatko
