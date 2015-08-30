@@ -2,79 +2,123 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>vsko.github.io</title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-        $(function() {
-            var username = 'vsko';
-            var requri   = 'https://api.github.com/users/'+username;
-            var repouri  = 'https://api.github.com/users/'+username+'/repos';
-
-            requestJSON(requri, function(json) {
-                if(json.message == "Not Found" || username == '') {
-                    $('.gitinfo').html("<h2>No User Info Found</h2>");
-                }
-                else {
-                    var name       = json.name;
-                    var login      = json.login;
-                    var avatar_url = json.avatar_url;
-                    var html_url   = json.html_url;
-                    var outhtml    = '';
-                    var repositories;
-
-                    if(name == undefined) { name = login; }
-
-                    outhtml = outhtml + '<div class="content"><a href="'+html_url+'" target="_blank"><img src="'+avatar_url+'" width="120" height="120" alt="'+login+'"></a>';
-                    outhtml = outhtml + '<h2 class="name">'+name+'</h2>';
-                    outhtml = outhtml + '<div class="repolist">';
-
-                    $.getJSON(repouri, function(json){
-                        repositories = json;
-                        outputPageContent();
-                    });
-
-                    function outputPageContent() {
-                        if(repositories.length == 0) { outhtml = outhtml + '<p>No repos!</p></div>'; }
-                        else {
-                            outhtml = outhtml + '<p>Repositories:</p><ul>';
-                            $.each(repositories, function(index) {
-                                outhtml = outhtml + '<li><a href="'+repositories[index].html_url+'" target="_blank">'+repositories[index].name + '</a></li>';
-                            });
-                            outhtml = outhtml + '</ul></div>';
-                        }
-                        $('.gitinfo').html(outhtml);
-                    }
-                }
-            });
-        });
-
-        function requestJSON(url, callback) {
-            $.ajax({
-                url: url,
-                complete: function(xhr) {
-                    callback.call(null, xhr.responseJSON);
-                }
-            });
-        }
-    </script>
+    <title>GoFrontend homeworks - Vitaliy Skorobagatko</title>
+    <base href="http://vsko.github.io/" target="_blank" />
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <style>
-        @import "http://webfonts.ru/import/marck.css";
-        @font-face { font-family: 'Noto Sans'; src: local('Noto Sans'), local('NotoSans'), url('http://64424.selcdn.ru/webfont/noto/notosans-regular.woff') format('woff'); font-weight: 400; font-style: normal; }
-        body { background: #f5f5f5; font-family: Arial, sans-serif; }
-        h1,h2,p,ul { margin: 0; }
-        a { color: #a8a8a8; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .title { font-size: 150%; text-align: center; margin-top: 10%; }
-        .title::before { color: #a8a8a8; content: 'vsko'; }
-        .title::after { color: #a28cd8; content: 'io'; }
-        .gitinfo { width: 20%; min-width: 320px; margin: 50px auto; padding: 30px; background: #fff; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; text-align: center; -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15); -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15); box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.15); }
-        .gitinfo h2 { font-size: 35px; font-family: 'Marck Script', sans-serif; }
-        .gitinfo p { margin-top: 20px; margin-bottom: 5px; }
-        .gitinfo li { display: inline-block; margin-right: 10px; }
+        .container {
+            font-family: 'Droid Sans', sans-serif;
+        }
+
+        .heading {
+            font-size: 30px;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+
+        .nav {
+            list-style-type: none;
+            margin-left: 50px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .nav ul {
+            margin-right: 50px;
+            padding: 5px 0 0 25px;
+        }
+
+        .nav li {
+            padding: 0;
+        }
+
+        .nav > li {
+            float: left;
+        }
+
+        .nav li > span {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .nav ul {
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .complete + ul > li a,
+        .complete a {
+            text-decoration: line-through;
+        }
+
     </style>
 </head>
 <body>
-    <h1 class="title">.github.</h1>
-    <div class="gitinfo"></div>
+<div class="container">
+    <h1 class="heading">GoFrontend homeworks - <span>Vitaliy Skorobagatko</span></h1>
+    <ul class="nav">
+        <li>
+            <span class="complete">Lesson 1</span>
+            <ul>
+                <li><a href="/markup/home/lesson1/task1.html">Task 1</a></li>
+                <li><a href="/markup/home/lesson1/task2.html">Task 2</a></li>
+                <li><a href="/markup/home/lesson1/task3.html">Task 3</a></li>
+                <li><a href="/markup/home/lesson1/task4.html">Task 4</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="complete">Lesson 2</span>
+            <ul>
+                <li><a href="/markup/home/lesson2/task1.html">Task 1</a></li>
+                <li><a href="/markup/home/lesson2/task2.html">Task 2</a></li>
+                <li><a href="/markup/home/lesson2/task3.html">Task 3</a></li>
+                <li><a href="/markup/home/lesson2/task4.html">Task 4</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="complete">Lesson 3</span>
+            <ul>
+                <li><a href="/markup/home/lesson3/task1.html">Task 1</a></li>
+                <li><a href="/markup/home/lesson3/task2.html">Task 2</a></li>
+                <li><a href="/markup/home/lesson3/task3.html">Task 3</a></li>
+                <li><a href="/markup/home/lesson3/task4.html">Task 4</a></li>
+                <li><a href="/markup/home/lesson3/task5.html">Task 5</a></li>
+                <li><a href="/markup/home/lesson3/task6.html">Task 6</a></li>
+            </ul>
+        </li>
+        <li>
+            <span>Lesson 4</span>
+            <ul>
+                <li><a href="/markup/home/lesson4/task1.html">Task 1</a></li>
+                <li><a href="/markup/home/lesson4/task2.html">Task 2</a></li>
+                <li><a href="/markup/home/lesson4/task3.html">Task 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <span>Lesson 5</span>
+            <ul>
+                <li><a href="/markup/home/lesson5/task1.html">Task 1</a></li>
+                <li><a href="/markup/home/lesson5/task2.html">Task 2</a></li>
+            </ul>
+        </li>
+        <li>
+            <span>Lesson 6</span>
+            <ul>
+                <li><a href="/markup/home/lesson6/task1.html">Task 1</a></li>
+                <li><a href="/markup/home/lesson6/task2.html">Task 2</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
 </body>
 </html>
