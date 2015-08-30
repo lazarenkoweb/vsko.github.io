@@ -3,7 +3,7 @@ body {
 }
 
 .heading,
-.offers > div .body .price {
+.offers > .inner .body .price {
     color: #2f495b;
 }
 
@@ -12,27 +12,27 @@ body {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
+    margin-bottom: 58px;
 }
 
 .offers {
-    width: 880px;
+    width: 873px;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.offers > div {
-    width: 296px;
+.offers > .inner {
     float: left;
 }
 
-.offers > div .head,
-.offers > div .body .title {
+.offers > .inner .head,
+.offers > .inner .body .title {
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.offers > div .head {
+.offers > .inner .head {
     color: #fff;
     font-size: 25px;
     font-weight: bold;
@@ -40,57 +40,57 @@ body {
     letter-spacing: 1px;
 }
 
-.offers > div .body {
+.offers > .inner .body {
     margin: 0 4px;
     padding-bottom: 30px;
     background: #fff;
 }
 
-.offers > div .body .title {
+.offers > .inner .body .title {
     text-align: center;
-    padding: 20px 0 12px 0;
+    padding: 18px 0 12px 0;
     letter-spacing: 1px;
 }
 
-.offers > div .body .price {
+.offers > .inner .body .price {
     font: 17px Tahoma;
     text-align: center;
 }
 
-.offers > div .body .price .dig {
+.offers > .inner .body .price .dig {
     position: relative;
     bottom: 40px;
 }
 
-.offers > div .body .price .num {
+.offers > .inner .body .price .num {
     font: bold 70px Arial;
 }
 
-.offers > div .body .price .period {
+.offers > .inner .body .price .period {
     position: relative;
     top: 6px;
     right: 2px;
 }
 
-.offers > div .body .options {
+.offers > .inner .body .options {
     font: 15px Arial;
     list-style-type: none;
     margin: 20px 15px 18px 15px;
     padding: 0;
 }
 
-.offers > div .body .options li {
+.offers > .inner .body .options li {
     color: #aaa;
     background: #f5f5f6 url('marker.png') 35px center no-repeat;
     padding: 8px 0 8px 63px;
     border-bottom: 1px #fff solid;
 }
 
-.offers > div .body .options li:nth-child(odd) {
+.offers > .inner .body .options li:nth-child(odd) {
     background-color: #ebf5fe;
 }
 
-.offers > div .body .button {
+.offers > .inner .body .button {
     color: #fff;
     font: 13px Arial;
     text-transform: uppercase;
@@ -105,6 +105,7 @@ body {
 }
 
 .offers > .best {
+    width: 296px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -125,8 +126,16 @@ body {
     border-bottom: 3px #c24f00 solid;
 }
 
+.offers > .standard,
+.offers > .ultimate {
+    margin-top: 13px;
+    border: 1px #e7eaec solid;
+}
+
 .offers > .standard {
+    width: 289px;
     background: #00c5d7;
+    border-right: none;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-radius-topleft: 5px;
@@ -136,7 +145,9 @@ body {
 }
 
 .offers > .ultimate {
+    width: 286px;
     background: #00be9b;
+    border-left: none;
     -webkit-border-top-right-radius: 5px;
     -webkit-border-bottom-right-radius: 5px;
     -moz-border-radius-topright: 5px;
@@ -145,23 +156,15 @@ body {
     border-bottom-right-radius: 5px;
 }
 
-.offers > .standard,
-.offers > .ultimate {
-    width: 292px;
-    margin-top: 15px;
-}
-
 .offers > .standard .head,
 .offers > .ultimate .head {
-    padding: 20px 0 13px 0;
+    padding: 20px 0 14px 0;
 }
 
 .offers > .standard .body,
 .offers > .ultimate .body {
     margin: 0;
     padding-bottom: 20px;
-    border: 1px #e7eaec solid;
-    border-top: none;
 }
 
 .offers > .standard .body {
