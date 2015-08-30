@@ -1,0 +1,87 @@
+body,h1 {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.testimonials {
+    background: #181f23 url('bg-testimonials.png');
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.heading {
+    color: #3170a8;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 41px;
+}
+
+.heading strong {
+    color: #ee8129;
+    font-weight: normal;
+}
+
+.say {
+    width: 489px;
+    text-align: left;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin-right: 39px;
+}
+
+.say:after {
+    margin-top: -12px;
+    position: absolute;
+    top: 50%;
+    left: 109px;
+    content: url('arrow.png');
+}
+
+.clientpic {
+    float: left;
+    margin-right: 26px;
+}
+
+.clientpic img {
+    float: left;
+}
+
+.comment {
+    font-size: 13px;
+    padding: 15px 17px 14px 14px;
+    overflow: hidden;
+    position: relative;
+    background: #f7f7f7;
+    border: 1px #e0e0e0 solid;
+}
+
+.comment .name {
+    float: left;
+}
+
+.comment .name:before {
+    content: '- ';
+}
+
+.comment .who {
+    float: right;
+    margin-right: 4px;
+}
+
+.comment .text {
+    color: #666;
+    clear: both;
+    padding-top: 12px;
+    border-top: 1px #666 dotted;
+}
+
+.comment .name,
+.comment .who {
+    color: #3070a8;
+    font-style: italic;
+    padding-bottom: 9px;
+}
