@@ -1,1 +1,1 @@
-# Initialize this repository with a README
+# GoFrontend homeworks - Vitaliy Skorobagatko
