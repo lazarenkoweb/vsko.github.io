@@ -1,0 +1,91 @@
+.search {
+    width: 40%;
+    font-family: Arial, sans-serif;
+    position: relative;
+    padding-right: 8px;
+}
+
+.search,
+.search .arrows {
+    background: rgba(252,203,88,1);
+    background: -moz-linear-gradient(top, rgba(252,203,88,1) 0%, rgba(245,186,49,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,203,88,1)), color-stop(100%, rgba(245,186,49,1)));
+    background: -webkit-linear-gradient(top, rgba(252,203,88,1) 0%, rgba(245,186,49,1) 100%);
+    background: -o-linear-gradient(top, rgba(252,203,88,1) 0%, rgba(245,186,49,1) 100%);
+    background: -ms-linear-gradient(top, rgba(252,203,88,1) 0%, rgba(245,186,49,1) 100%);
+    background: linear-gradient(to bottom, rgba(252,203,88,1) 0%, rgba(245,186,49,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fccb58', endColorstr='#f5ba31', GradientType=0 );
+}
+
+.search .query {
+    padding-right: 22px;
+    overflow: hidden;
+}
+
+.search .query input {
+    width: 100%;
+}
+
+.search .query input,
+.search button {
+    font-size: 14px;
+    margin: 5px 4px 0 5px;
+    padding: 3px 5px 3px 5px;
+    outline: none;
+}
+
+.search button {
+    width: auto;
+    margin-left: 0;
+    padding: 5px 10px 5px 10px;
+    float: right;
+}
+
+.search .settings {
+    font-size: 80%;
+    margin-left: 3px;
+    padding-bottom: 5px;
+    clear: both;
+}
+
+.search .settings span {
+    margin-top: 2px;
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.search .settings kdb {
+    border-bottom: 1px #000 dotted;
+    cursor: pointer;
+}
+
+.search .settings kdb:hover {
+    border-bottom-color: #fff;
+    border-bottom-style: solid;
+}
+
+.search .arrows {
+    width: 25px;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    right: -18px;
+    overflow: hidden;
+}
+
+.search .arrows .arrow-a {
+    top: 0;
+    transform: rotate(65deg);
+}
+
+.search .arrows .arrow-b {
+    bottom: 0;
+    transform: rotate(-65deg);
+}
+
+.search .arrows .arrow-a,
+.search .arrows .arrow-b {
+    width: 62px;
+    height: 27px;
+    background: #fff;
+}
