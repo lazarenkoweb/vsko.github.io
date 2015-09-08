@@ -7,7 +7,6 @@
 .pagination a {
     color: #b0d;
     font: 10px Arial;
-    letter-spacing: 0px;
     padding: 6px 8px;
     margin-right: 2px;
     border: 1px #ddd solid;
@@ -17,7 +16,7 @@
     text-decoration: none;
 }
 
-.pagination .active {
+.pagination .num:hover {
     color: #fff;
     background-color: #b0d;
     border-color: #9f00bc;
