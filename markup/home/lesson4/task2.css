@@ -1,10 +1,10 @@
 body,ul,li {
     margin: 0;
+    padding: 0;
 }
 
 .menu {
-    text-align: center;
-    background: #b400ff;
+    background: #a64dff;
     box-shadow: 1px 1px 8px rgba(100,100,100,.2);
     overflow: hidden;
 }
@@ -19,20 +19,19 @@ body,ul,li {
 
 .menu .nav {
     width: 900px;
+    padding-left: 60px;
     list-style-type: none;
 }
 
 .menu .nav li {
-    padding: 0;
     float: left;
 }
 
-.menu .nav a,
-.menu .more a {
-    padding: 0 17px;
+.menu .nav a {
+    display: block;
+    padding: 0 15px;
 }
 
-.menu .nav a.active,
 .menu .nav a:hover {
     color: #aaa;
     background: #eee;
@@ -40,32 +39,10 @@ body,ul,li {
 
 .menu .more {
     width: 100px;
-    margin-right: 55px;
+    float: right;
+    margin-right: 15px;
 }
 
-.menu .more a.active,
 .menu .more a:hover {
     text-decoration: underline;
-}
-
-.menu .nav,
-.menu .more,
-.menu .nav a,
-.menu .more a {
-    display: block;
-}
-
-.menu .nav.left,
-.menu .more.left {
-    float: left;
-}
-
-.menu .nav.right,
-.menu .more.right {
-    float: right;
-}
-
-.menu .nav.center,
-.menu .more.center {
-    margin: 0 auto;
 }
