@@ -1,11 +1,12 @@
 body,ul,li {
     margin: 0;
+    padding: 0;
 }
 
 .menu {
     text-align: center;
     background: #1aa4ff;
-    box-shadow: 0 2px 2px rgba(100,100,100,.2);
+    box-shadow: 1px 1px 8px rgba(100,100,100,.5);s
 }
 
 .menu a {
@@ -18,57 +19,57 @@ body,ul,li {
 }
 
 .menu .nav {
-    margin: 0 auto;
     list-style-type: none;
     position: relative;
 }
 
-.menu .spacer {
-    height: 32px;
-    background: #eee;
-    display: none;
-}
-
-.menu .nav,
-.menu .nav ul,
-.menu .nav ul li,
 .menu .nav li {
     display: inline-block;
-}
-
-.menu .nav a {
     padding: 0 15px;
 }
 
-.menu .nav li:hover > ul,
-.menu .nav li:hover a {
-    color: #aaa;
+.menu .nav .submenu {
+    text-align: left;
+    display: none;
+}
+
+.menu .nav li:hover {
     background: #eee;
 }
 
-.menu .nav ul {
-    display: none;
-    text-align: left;
+.menu .nav li:hover a {
+    color: #aaa;
 }
 
-.menu .nav li:hover > ul {
+.menu .nav li:hover > .submenu {
     width: 100%;
-    margin: 0;
     display: block;
     position: absolute;
     top: 40px;
     left: 0;
+    background: #eee;
+    box-shadow: 1px 4px 5px -3px rgba(100,100,100,.5);
 }
 
-.menu .nav li:hover > ul li a {
+.menu .nav li:hover > .submenu ul {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.menu .nav li:hover > .submenu ul li {
+    padding-left: 5px;
+    padding-right: 30px;
+}
+
+.menu .nav li:hover > .submenu ul li a {
     color: #aaa;
     font-family: Arial;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 32px;
     text-transform: none;
     display: block;
 }
 
-.menu .nav:hover + .spacer {
-    display: block;
+.menu .nav li:hover > .submenu ul li a:hover {
+    color: #1aa4ff;
 }
