@@ -1,12 +1,12 @@
 body,ul,li {
     margin: 0;
+    padding: 0;
 }
 
 .menu {
     width: 100%;
-    text-align: center;
-    background: #b400ff;
-    box-shadow: 1px 1px 8px rgba(100,100,100,.2);
+    background: #a64dff;
+    box-shadow: 1px 1px 8px rgba(100,100,100,.5);
 }
 
 .menu a {
@@ -19,8 +19,7 @@ body,ul,li {
 }
 
 .menu .nav {
-    width: 900px;
-    margin: 0 auto;
+    padding-left: 60px;s
     list-style-type: none;
 }
 
@@ -33,7 +32,6 @@ body,ul,li {
     padding: 0 15px;
 }
 
-.menu .nav a.active,
 .menu .nav a:hover {
     color: #aaa;
     background: #eee;
