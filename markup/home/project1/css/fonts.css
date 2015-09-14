@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans.eot');
+    src: url('../fonts/opensans.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans.woff') format('woff'),
+    url('../fonts/opensans.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans-bold.eot');
+    src: url('../fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-bold.woff') format('woff'),
+    url('../fonts/opensans-bold.ttf')  format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans-italic.eot');
+    src: url('../fonts/opensans-italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-italic.woff') format('woff'),
+    url('../fonts/opensans-italic.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpenSans Semibold';
+    src: url('../fonts/opensans-semibold.eot');
+    src: url('../fonts/opensans-semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-semibold.woff') format('woff'),
+    url('../fonts/opensans-semibold.ttf')  format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans Semibold Italic';
+    src: url('../fonts/opensans-semibold-italic.eot');
+    src: url('../fonts/opensans-semibold-italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-semibold-italic.woff') format('woff'),
+    url('../fonts/opensans-semibold-italic.ttf')  format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FuturaBT Book';
+    src: url('../fonts/futurabt-book.eot');
+    src: url('../fonts/futurabt-book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futurabt-book.woff') format('woff'),
+    url('../fonts/futurabt-book.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaBT Bold';
+    src: url('../fonts/futurabt-bold.eot');
+    src: url('../fonts/futurabt-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futurabt-bold.woff') format('woff'),
+    url('../fonts/futurabt-bold.ttf')  format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/calibri.eot');
+    src: url('../fonts/calibri.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/calibri.woff') format('woff'),
+    url('../fonts/calibri.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url('../fonts/trebuchetms.eot');
+    src: url('../fonts/trebuchetms.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/trebuchetms.woff') format('woff'),
+    url('../fonts/trebuchetms.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url('../fonts/trebuchetms-bold.eot');
+    src: url('../fonts/trebuchetms-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/trebuchetms-bold.woff') format('woff'),
+    url('../fonts/trebuchetms-bold.ttf')  format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
