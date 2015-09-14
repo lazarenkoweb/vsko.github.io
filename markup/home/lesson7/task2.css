@@ -1,0 +1,386 @@
+body,h1,h2,ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/************************* Header *************************/
+.header {
+    overflow: hidden;
+}
+
+.top {
+    padding: 36px 168px 34px 188px;
+}
+
+.logo {
+    color: #ee8129;
+    font: 36px 'FuturaBT Book';
+    margin-top: 2px;
+    display: inline-block;
+}
+
+.logo span {
+    color: #3070a8;
+    font-family: 'FuturaBT Bold';
+    text-transform: uppercase;
+}
+
+.menu {
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    color: #989898;
+    font: 14px 'OpenSans Semibold';
+    text-transform: uppercase;
+    margin-right: 5px;
+    padding: 25px 14px 32px 19px;
+    display: inline-block;
+}
+
+.menu a:hover {
+    color: #3070a8;
+    border-bottom: 4px #3070a8 solid;
+
+}
+
+/************************* Banner *************************/
+.banner {
+    color: #fff;
+    background: #334f6a;
+    padding-top: 144px;
+    padding-bottom: 107px;
+    text-align: center;
+    background: url('images/banner-bg.png') no-repeat;
+    background-size: cover;
+}
+
+.banner .heading {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner .heading span {
+    font: 36px 'FuturaBT Book', Arial, sans-serif;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.banner .heading strong {
+    font: 48px 'FuturaBT Bold', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.banner p {
+    width: 600px;
+    font: italic 20px 'Calibri', Arial, sans-serif;
+    line-height: 30px;
+    margin: 0 auto;
+    padding: 16px 0 37px 0;
+}
+
+.banner .button {
+    width: 247px;
+    color: #fff;
+    display: inline-block;
+    background: url('images/banner-button.png');
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.banner .button:hover {
+    color: #ee8129;
+    background: #fff;
+}
+
+.banner .button span {
+    width: 245px;
+    font: 16px 'OpenSans Semibold';
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 57px;
+    margin: 1px;
+    display: block;
+}
+
+/************************* Offers *************************/
+.offers {
+    width: 873px;
+    margin: 0 auto;
+    padding-top: 69px;
+    padding-bottom: 76px;
+    overflow: hidden;
+}
+
+.offers .heading {
+    color: #2f495b;
+    font: bold 30px 'Trebuchet MS';
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.offers > .inner {
+    float: left;
+}
+
+.offers > .inner .head,
+.offers > .inner .body .title {
+    text-transform: uppercase;
+}
+
+.offers > .inner .head {
+    color: #fff;
+    font: 24px 'FuturaBT Bold';
+    text-align: center;
+}
+
+.offers > .inner .body {
+    margin: 0 4px;
+    padding-bottom: 30px;
+    background: #fff;
+}
+
+.offers > .inner .body .title {
+    font: 24px 'FuturaBT Book';
+    text-align: center;
+    padding: 17px 0 7px 0;
+}
+
+.offers > .inner .body .price {
+    color: #2f495b;
+    font-family: 'FuturaBT Bold';
+    text-align: center;
+}
+
+.offers > .inner .body .price .dig {
+    font-size: 21px;
+    position: relative;
+    left: 6px;
+    bottom: 40px;
+}
+
+.offers > .inner .body .price .num {
+    font-size: 72px;
+    letter-spacing: -5px;
+}
+
+.offers > .inner .body .price .period {
+    font: 18px 'FuturaBT Book';
+    position: relative;
+    top: 6px;
+    right: 6px;
+}
+
+.offers > .inner .body .options {
+    font: bold 15px 'Calibri';
+    letter-spacing: 0.5px;
+    list-style-type: none;
+    margin: 20px 15px 18px 15px;
+    padding: 0;
+}
+
+.offers > .inner .body .options li {
+    color: #888c94;
+    background: #f5f5f6 url('images/offers-marker.png') 35px center no-repeat;
+    padding: 8px 0 8px 63px;
+    border-bottom: 1px #fff solid;
+}
+
+.offers > .inner .body .options li:nth-child(odd) {
+    background-color: #ebf5fe;
+}
+
+.offers > .inner .body .button {
+    color: #fff;
+    font: 14px 'OpenSans';
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 0 18px;
+    padding: 9.5px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.offers > .best {
+    width: 296px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-bottom: 4px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+}
+
+.offers > .best .head {
+    padding: 24px 0;
+}
+
+.offers > .best,
+.offers > .best .body .button {
+    background: #ff7b04;
+}
+
+.offers > .best .body .button {
+    border-bottom: 3px #c24f00 solid;
+}
+
+.offers > .standard,
+.offers > .ultimate {
+    margin-top: 13px;
+    border: 1px #e7eaec solid;
+}
+
+.offers > .standard {
+    width: 289px;
+    background: #00c5d7;
+    border-right: none;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.offers > .ultimate {
+    width: 286px;
+    background: #00be9b;
+    border-left: none;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.offers > .standard .head,
+.offers > .ultimate .head {
+    padding: 20px 0 14px 0;
+}
+
+.offers > .standard .body,
+.offers > .ultimate .body {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.offers > .standard .body {
+    border-right: none;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.offers > .ultimate .body {
+    border-left: none;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.offers > .standard .body .button,
+.offers > .ultimate .body .button {
+    background: #006eaa;
+    border-bottom: 3px #033f6b solid;
+}
+
+/************************* Testimonials *************************/
+.testimonials {
+    background: #181f23 url('images/testimonials-bg.png');
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.testimonials .heading {
+    color: #3170a8;
+    font: 40px 'FuturaBT Bold';
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 48px;
+    padding-bottom: 40px;
+}
+
+.testimonials .heading span {
+    color: #ee8129;
+    font-family: 'FuturaBT Book';
+}
+
+.testimonials .say {
+    width: 489px;
+    text-align: left;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin-right: 39px;
+}
+
+.testimonials .say:after {
+    margin-top: -12px;
+    position: absolute;
+    top: 50%;
+    left: 109px;
+    content: url('images/testimonials-arrow.png');
+}
+
+.testimonials .clientpic {
+    float: left;
+    margin-right: 26px;
+}
+
+.testimonials .clientpic img {
+    float: left;
+}
+
+.testimonials .comment {
+    font-size: 13px;
+    padding: 10px 17px 14px 14px;
+    overflow: hidden;
+    position: relative;
+    background: #f7f7f7;
+    border: 1px #e0e0e0 solid;
+}
+
+.testimonials .comment .name {
+    float: left;
+}
+
+.testimonials .comment .name:before {
+    content: '- ';
+}
+
+.testimonials .comment .who {
+    float: right;
+    margin-right: 4px;
+}
+
+.testimonials .comment .text {
+    color: #666;
+    font-family: 'OpenSans';
+    clear: both;
+    padding-top: 8px;
+    border-top: 1px #666 dotted;
+}
+
+.testimonials .comment .name,
+.testimonials .comment .who {
+    color: #3070a8;
+    font-family: 'OpenSans Semibold Italic';
+    font-style: italic;
+    padding-bottom: 9px;
+}
