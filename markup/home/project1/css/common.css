@@ -384,3 +384,90 @@ a {
     font-style: italic;
     padding-bottom: 9px;
 }
+
+.contact {
+    color: #666;
+    font: 14px 'OpenSans';
+}
+
+.contact .info {
+    padding-top: 40px;
+    float: left;
+}
+
+.contact .address {
+    line-height: 30px;
+    background: url('../images/contact-address.png') no-repeat 5px 3px;
+}
+
+.contact .phone {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background: url('../images/contact-phone.png') no-repeat 3px 13px;
+}
+
+.contact .email {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background: url('../images/contact-email.png') no-repeat 0 11px;
+}
+
+.contact .address,
+.contact .phone,
+.contact .email,
+.contact .social {
+    margin-left: 190px;
+    padding-left: 60px;
+}
+
+.contact .facebook,
+.contact .twitter {
+    margin-right: 22px;
+}
+
+.contact .facebook {
+    background: url('../images/contact-facebook.png') no-repeat;
+}
+
+.contact .twitter {
+    background: url('../images/contact-twitter.png') no-repeat;
+}
+
+.contact .linkedin {
+    background: url('../images/contact-linkedin.png') no-repeat;
+}
+
+.contact .social {
+    padding-top: 19px;
+    padding-left: 0;
+}
+
+.contact .social a {
+    width: 46px;
+    height: 46px;
+    text-indent: -3000px;
+    display: inline-block;
+}
+
+.contact .map {
+    width: 704px;
+    height: 345px;
+    float: right;
+    background: url('../images/contact-map.png') no-repeat;
+}
+
+.footer {
+    color: #fff;
+    font: 14px 'OpenSans';
+    text-align: center;
+    line-height: 30px;
+    padding-top: 25px;
+    padding-bottom: 19px;
+    clear: both;
+    background: #3070a8;
+}
+
+.footer a {
+    color: #1d1c1c;
+    font-weight: bold;
+}
