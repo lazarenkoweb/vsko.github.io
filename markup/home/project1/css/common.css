@@ -18,14 +18,15 @@ a {
 
 .logo {
     color: #ee8129;
-    font: 36px 'FuturaBT Book';
+    font: 36px 'FuturaBT Book', Arial, sans-serif;
     margin-top: 2px;
     display: inline-block;
 }
 
 .logo span {
     color: #3070a8;
-    font-family: 'FuturaBT Bold';
+    font-family: 'FuturaBT Bold', Arial, sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -41,7 +42,7 @@ a {
 
 .menu a {
     color: #989898;
-    font: 14px 'OpenSans Semibold';
+    font: 14px 'OpenSans Semibold', Arial, sans-serif;
     text-transform: uppercase;
     margin-right: 5px;
     padding: 25px 14px 32px 19px;
@@ -85,6 +86,7 @@ a {
 .banner p {
     width: 600px;
     font: italic 20px 'Calibri', Arial, sans-serif;
+    text-shadow: 2px 1px 1px rgba(0,0,0,.26);
     line-height: 30px;
     margin: 0 auto;
     padding: 16px 0 37px 0;
@@ -107,12 +109,104 @@ a {
 
 .banner .button span {
     width: 245px;
-    font: 16px 'OpenSans Semibold';
+    font: 16px 'OpenSans Semibold', Arial, sans-serif;
     text-align: center;
     text-transform: uppercase;
     line-height: 57px;
     margin: 1px;
     display: block;
+}
+
+/************************* Services *************************/
+.services {
+    /*width: 915px;*/
+    width: 1035px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.services .heading {
+    color: #41525c;
+    font: bold 30px 'Trebuchet MS', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.services > .inner {
+    text-align: center;
+    width: 305px;
+    margin-right: 40px;
+    float: left;
+}
+
+.services > .inner .title {
+    color: #3070a8;
+    font: 30px 'FuturaBT Book', Arial, sans-serif;
+    text-transform: uppercase;
+    padding-top: 165px;
+}
+
+.services > .inner .text {
+    color: #999;
+    font: 14px 'OpenSans', Arial, sans-serif;
+    line-height: 25px;
+    margin-top: 14px;
+    margin-bottom: 39px;
+}
+
+.services > .protect {
+    background: url('../images/services-protect.png') no-repeat center 0;
+}
+
+.services > .alert {
+    background: url('../images/services-alert.png') no-repeat center 0;
+}
+
+.services > .detect {
+    background: url('../images/services-detect.png') no-repeat center 0;
+}
+
+/************************* Middle *************************/
+.middle {
+    /*height: 577px;*/
+    padding-top: 57px;
+    padding-left: 190px;
+    padding-bottom: 73px;
+    background: url('../images/middle-bg.png') no-repeat;
+    background-size: cover;
+}
+
+.middle p:first-of-type {
+    color: #ee8129;
+    font: 26px 'FuturaBT Book', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.middle p:nth-child(2n) {
+    color: #fff;
+    font: 19px 'OpenSans', Arial, sans-serif;
+    font-style: italic;
+}
+
+.middle ul {
+    width: 600px;
+    padding-left: 35px;
+}
+
+.middle li {
+    color: #9d9d9d;
+    font: 14px 'OpenSans', Arial, sans-serif;
+    line-height: 30px;
+    margin-top: 12px;
+    padding-left: 6px;
+    list-style-image: url('../images/middle-bullet-a.png');
+}
+
+.middle li:nth-child(2n) {
+    color: #3070a8;
+    list-style-image: url('../images/middle-bullet-b.png');
 }
 
 /************************* Offers *************************/
@@ -126,7 +220,7 @@ a {
 
 .offers .heading {
     color: #2f495b;
-    font: bold 30px 'Trebuchet MS';
+    font: bold 30px 'Trebuchet MS', Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 58px;
@@ -143,7 +237,7 @@ a {
 
 .offers > .inner .head {
     color: #fff;
-    font: 24px 'FuturaBT Bold';
+    font: 24px 'FuturaBT Bold', Arial, sans-serif;
     text-align: center;
 }
 
@@ -154,14 +248,14 @@ a {
 }
 
 .offers > .inner .body .title {
-    font: 24px 'FuturaBT Book';
+    font: 24px 'FuturaBT Book', Arial, sans-serif;
     text-align: center;
     padding: 17px 0 7px 0;
 }
 
 .offers > .inner .body .price {
     color: #2f495b;
-    font-family: 'FuturaBT Bold';
+    font-family: 'FuturaBT Bold', Arial, sans-serif;
     text-align: center;
 }
 
@@ -178,14 +272,14 @@ a {
 }
 
 .offers > .inner .body .price .period {
-    font: 18px 'FuturaBT Book';
+    font: 18px 'FuturaBT Book', Arial, sans-serif;
     position: relative;
     top: 6px;
     right: 6px;
 }
 
 .offers > .inner .body .options {
-    font: bold 15px 'Calibri';
+    font: bold 15px 'Calibri', Arial, sans-serif;
     letter-spacing: 0.5px;
     list-style-type: none;
     margin: 20px 15px 18px 15px;
@@ -205,7 +299,7 @@ a {
 
 .offers > .inner .body .button {
     color: #fff;
-    font: 14px 'OpenSans';
+    font: 14px 'OpenSans', Arial, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
@@ -309,7 +403,7 @@ a {
 
 .testimonials .heading {
     color: #3170a8;
-    font: 40px 'FuturaBT Bold';
+    font: bold 40px 'FuturaBT Bold', Arial, sans-serif;
     text-align: center;
     text-transform: uppercase;
     padding-top: 48px;
@@ -318,7 +412,7 @@ a {
 
 .testimonials .heading span {
     color: #ee8129;
-    font-family: 'FuturaBT Book';
+    font-family: 'FuturaBT Book', Arial, sans-serif;
 }
 
 .testimonials .say {
@@ -371,7 +465,7 @@ a {
 
 .testimonials .comment .text {
     color: #666;
-    font-family: 'OpenSans';
+    font-family: 'OpenSans', Arial, sans-serif;
     clear: both;
     padding-top: 8px;
     border-top: 1px #666 dotted;
@@ -380,14 +474,15 @@ a {
 .testimonials .comment .name,
 .testimonials .comment .who {
     color: #3070a8;
-    font-family: 'OpenSans Semibold Italic';
+    font-family: 'OpenSans Semibold Italic', Arial, sans-serif;
     font-style: italic;
     padding-bottom: 9px;
 }
 
+/************************* Contact *************************/
 .contact {
     color: #666;
-    font: 14px 'OpenSans';
+    font: 14px 'OpenSans', Arial, sans-serif;
 }
 
 .contact .info {
@@ -456,9 +551,10 @@ a {
     background: url('../images/contact-map.png') no-repeat;
 }
 
+/************************* Footer *************************/
 .footer {
     color: #fff;
-    font: 14px 'OpenSans';
+    font: 14px 'OpenSans', Arial, sans-serif;
     text-align: center;
     line-height: 30px;
     padding-top: 25px;
