@@ -5,6 +5,7 @@ body,ul,li {
 
 .menu {
     width: 100%;
+    text-align: center;
     background: #a64dff;
     box-shadow: 1px 1px 8px rgba(100,100,100,.5);
 }
@@ -19,7 +20,7 @@ body,ul,li {
 }
 
 .menu .nav {
-    padding-left: 60px;s
+    display: inline-block;
     list-style-type: none;
 }
 
