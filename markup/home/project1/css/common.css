@@ -170,7 +170,6 @@ a {
 
 /************************* Middle *************************/
 .middle {
-    /*height: 577px;*/
     padding-top: 57px;
     padding-left: 190px;
     padding-bottom: 73px;
@@ -196,17 +195,23 @@ a {
 }
 
 .middle li {
-    color: #9d9d9d;
-    font: 14px 'OpenSans', Arial, sans-serif;
     line-height: 30px;
     margin-top: 12px;
     padding-left: 6px;
     list-style-image: url('../images/middle-bullet-a.png');
 }
 
-.middle li:nth-child(2n) {
-    color: #3070a8;
+.middle li:hover {
     list-style-image: url('../images/middle-bullet-b.png');
+}
+
+.middle a {
+    color: #9d9d9d;
+    font: 14px 'OpenSans', Arial, sans-serif;
+}
+
+.middle li:hover a {
+    color: #3070a8;
 }
 
 /************************* Offers *************************/
