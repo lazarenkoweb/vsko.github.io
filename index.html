@@ -8,11 +8,13 @@
     <style>
         body,h1,ul,li { margin: 0; padding: 0; font-family: 'Droid Sans', sans-serif; }
         .container { width: 100%; border-top: 3px black solid; }
-        .heading { font-size: 30px; margin-left: 50px; padding: 50px 0; }
-        .nav { list-style-type: none; overflow: hidden; }
-        .nav ul { margin-bottom: 20px; margin-left: 25px; }
-        .nav > li { float: left; margin-left: 50px; }
-        .nav li > span { font-size: 20px; font-weight: 700; text-transform: uppercase; }
+        .heading { font-size: 30px; text-align: center; padding: 50px 0; }
+        .nav { list-style-type: none; text-align: center; }
+        .nav ul { margin: 0 0 0 25px; padding: 10px; }
+        .nav ul li { text-align: left; }
+        .nav > li { width: 150px; height: 174px; margin: 7px 5px; vertical-align: top; display: inline-block; box-shadow: 1px 1px 8px rgba(0,0,0,.3); }
+        .nav li > span { color: #fff; display: block; font-size: 20px; font-weight: 700; text-transform: uppercase; margin: 4px; padding: 2px 0; background: #000; }
+        .nav li:hover > span { color: #000; background: #fff; }
         .nav a { color: black; text-decoration: none; }
         .nav a:hover { text-decoration: underline; }
         .complete + ul > li a,.complete a { text-decoration: line-through; }
@@ -52,7 +54,7 @@
             </ul>
         </li>
         <li>
-            <span>Lesson 4</span>
+            <span class="complete">Lesson 4</span>
             <ul>
                 <li><a href="/markup/home/lesson4/task1.html">Task 1</a></li>
                 <li><a href="/markup/home/lesson4/task2.html">Task 2</a></li>
@@ -60,7 +62,7 @@
             </ul>
         </li>
         <li>
-            <span>Lesson 5</span>
+            <span class="complete">Lesson 5</span>
             <ul>
                 <li><a href="/markup/home/lesson5/task1.html">Task 1</a></li>
                 <li><a href="/markup/home/lesson5/task2.html">Task 2</a></li>
@@ -74,9 +76,9 @@
             </ul>
         </li>
         <li>
-            <span>Lesson 7</span>
+            <span class="complete">Lesson 7</span>
             <ul>
-                <li class="complete"><a href="/markup/home/lesson7/task1.html">Task 1</a></li>
+                <li><a href="/markup/home/lesson7/task1.html">Task 1</a></li>
                 <li><a href="/markup/home/lesson7/task2.html">Task 2</a></li>
             </ul>
         </li>
@@ -88,7 +90,7 @@
             </ul>
         </li>
         <li>
-            <span>Lesson 9</span>
+            <span class="complete">Lesson 9</span>
             <ul>
                 <li><a href="http://vsko.github.io/markup/home/project1/">Project 1</a></li>
             </ul>
