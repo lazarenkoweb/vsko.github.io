@@ -1,0 +1,167 @@
+<!-- TODO:
+        - Сделать тройной контейнер before, after
+        - Добавить тени
+            - добавить текстовую тень в меню
+            - добавить текстовую тень в кнопку
+            - добавить текстовую тень в тайтл и подпись превью
+            - добавить текстовую тень в описание под превью
+            - добавить тень в блок пикслайдер
+            - добавить тень в блок контейнера
+        - Реализовать пикслайдер
+            - добавить картинки
+            - добавить навигацию с кнопками и описанием
+            - изменять картинки через навигацию
+        - Реализовать выпадающее меню
+        - Реализовать ховер превью в галереи
+            - оверлей
+            - кнопки
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Examination</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/common.css" />
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <div class="name">Officetime</div>
+            <div class="slogan">Officetime as psd template</div>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#" class="active">Apply Now</a></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="picslider">
+
+        </div>
+        <div class="caption">
+            <h1>The Amazing Spider-Man</h1>
+            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit.</p>
+            <a href="#" class="button">
+                <span class="text">Watch Trailer</span>
+                <span class="label">in 720p Quality</span>
+                <span class="arrow"></span>
+            </a>
+        </div>
+    </div>
+    <div class="gallery">
+        <h2>The Undiscovered Beauty</h2>
+        <div class="wrapper">
+            <div class="item">
+                <div class="image"><img src="images/image-1.png" /></div>
+                <div class="title">
+                    <h3>Vehicula Inceptos Pharetra</h3>
+                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia.</p>
+                </div>
+                <div class="desc">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="images/image-2.png" /></div>
+                <div class="title">
+                    <h3>Euismod Pellentesque Egestas Commodo</h3>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient.</p>
+                </div>
+                <div class="desc">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="images/image-3.png" /></div>
+                <div class="title">
+                    <h3>Tristique Dapibus</h3>
+                    <p>Curabitur blandit tempus porttitor.</p>
+                </div>
+                <div class="desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content">
+        <h2>Ta<mark>bbb</mark>s get your content in line</h2>
+        <ul class="tabs">
+            <li class="active"><a href="#">Tabbb One</a></li>
+            <li><a href="#">Tabb Two</a></li>
+            <li><a href="#">Tabb Three</a></li>
+        </ul>
+        <div class="content">
+            <span class="underline">You content can be <mark class="stretched">highlighted</mark> like this.</span>
+            <div class="bottom">
+                <ul class="list">
+                    <li>Magna Porta</li>
+                    <li>Cras Amet Pharetra</li>
+                    <li>Ornare Dolor Pharetra</li>
+                    <li>Nibh Sit Elit</li>
+                    <li>Venenatis Tortor Aenean</li>
+                </ul>
+                <div class="images">
+                    <div class="thumb">
+                        <img src="images/thumb-1.png" align="left" />
+                        <h4>Type a Title</h4><br />
+                        <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet magna.</p>
+                    </div>
+                    <div class="thumb">
+                        <img src="images/thumb-2.png" align="left" />
+                        <h4>Type a Title</h4><br />
+                        <p>Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="single">
+            <h3>Single menu title</h3>
+            <ul>
+                <li><a href="#">Condimentum Etiam Purus</a></li>
+                <li><a href="#">Quam Tristique Sem</a></li>
+                <li><a href="#">Fusce Parturient</a></li>
+                <li><a href="#">Tristique Tortor Condimentum</a></li>
+                <li><a href="#">Magna Parturient Aenean</a></li>
+                <li><a href="#">Tortor Nibh Etiam</a></li>
+            </ul>
+        </div>
+        <div class="cursus">
+            <h3>Cursus venenatis mollis</h3>
+            <ul>
+                <li><a href="#">Condimentum Etiam Purus</a></li>
+                <li><a href="#">Quam Tristique Sem</a></li>
+                <li><a href="#">Fusce Parturient</a></li>
+                <li><a href="#">Tristique Tortor Condimentum</a></li>
+                <li><a href="#">Magna Parturient Aenean</a></li>
+                <li><a href="#">Cursus Justo Fringilla</a></li>
+            </ul>
+        </div>
+        <div class="articles">
+            <h3>Latest articles</h3>
+            <ul class="articles">
+                <li>
+                    <a href="#">
+                        <span class="title">Fusce Etiam Bibendum</span>
+                        <span class="desc">Sed posuere consectetur est at lobortis.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="title">Fusce Parturient</span>
+                        <span class="desc">Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="title">Manga Partirient Aenean</span>
+                        <span class="desc">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

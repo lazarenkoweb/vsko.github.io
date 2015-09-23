@@ -1,0 +1,448 @@
+body {
+    font: 14px Arial, sans-serif;
+    background: #fafafa;
+}
+
+body,h1,h2,h3,h4,p,ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    color: #515151;
+    font-size: 38px;
+}
+
+h2 {
+    color: #222;
+    font-size: 18px;
+    line-height: 56px;
+}
+
+ul,li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+mark {
+    color: #c07e00;
+    background: #ffe7b9;
+}
+
+.stretched {
+    padding: 3px;
+}
+
+.menu .active,
+.banner .caption .button {
+    background-color: rgba(255,198,84,1);
+    background-color: -moz-linear-gradient(top, rgba(255,198,84,1) 0%, rgba(255,188,68,1) 100%);
+    background-color: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,198,84,1)), color-stop(100%, rgba(255,188,68,1)));
+    background-color: -webkit-linear-gradient(top, rgba(255,198,84,1) 0%, rgba(255,188,68,1) 100%);
+    background-color: -o-linear-gradient(top, rgba(255,198,84,1) 0%, rgba(255,188,68,1) 100%);
+    background-color: -ms-linear-gradient(top, rgba(255,198,84,1) 0%, rgba(255,188,68,1) 100%);
+    background-color: linear-gradient(to bottom, rgba(255,198,84,1) 0%, rgba(255,188,68,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc654', endColorstr='#ffbc44', GradientType=0);
+    border-top: 1px #efba4f solid;
+    border-right: 1px #efb84a solid;
+    border-bottom: 1px #efaf3f solid;
+    border-left: 1px #efb545 solid;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.container {
+    max-width: 972px;
+    margin: 61px auto 0 auto;
+    background: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.15);
+}
+
+.header {
+    padding-top: 20px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+}
+
+.logo .name {
+    font: bold 40px 'OleoScript', sans-serif;
+}
+
+.logo .slogan {
+    color: #999;
+    font-size: 11px;
+    margin-left: 3px;
+}
+
+.menu {
+    margin-top: 23px;
+    margin-right: 20px;
+    float: right;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    color: #666;
+    font-family: 'Oxygen', sans-serif;
+    display: block;
+    margin-left: 35px;
+    padding-top: 4px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+}
+
+.menu .active {
+    color: #fff;
+}
+
+.banner {
+    margin: 0 20px;
+    padding-bottom: 61px;
+    border-bottom: 1px #e5e5e5 solid;
+    overflow: hidden;
+}
+
+.banner .picslider {
+    width: 302px;
+    height: 198px;
+    margin-top: 62px;
+    margin-left: 56px;
+    float: left;
+    background: url('../images/picslider-bg.png');
+}
+
+.banner .caption {
+    width: 500px;
+    text-align: right;
+    margin-top: 73px;
+    margin-left: 20px;
+    margin-right: 0px;
+    float: left;
+}
+
+.banner .caption p {
+    color: #666;
+    font-family: 'Oxygen', sans-serif;
+    padding-top: 5px;
+    padding-right: 4px;
+    padding-bottom: 14px;
+    border-bottom: 1px #f6f6f6 solid;
+}
+
+.banner .caption h1,
+.banner .caption p {
+    padding-left: 70px;
+}
+
+.banner .caption .button {
+    width: 168px;
+    height: 40px;
+    color: #fff;
+    font: 17px 'Oxygen', sans-serif;
+    text-align: left;
+    margin-top: 11px;
+    margin-right: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+.banner .caption .button .text {
+    padding-top: 4px;
+    padding-left: 6px;
+    display: block;
+}
+
+.banner .caption .button .label {
+    color: #d28600;
+    font-size: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 25px;
+    left: 8px;
+}
+
+.banner .caption .button .arrow {
+    float: right;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../images/button-arrow.png') no-repeat 0 center;
+}
+
+.gallery {
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.gallery h2 {
+    margin-left: 23px;
+}
+
+.gallery .wrapper {
+    margin-left: 17px;
+}
+
+.gallery .item {
+    width: 301px;
+    float: left;
+    margin-right: 17px;
+}
+
+.gallery .item .image {
+    padding: 2px;
+    border: 1px #f1f1f1 solid;
+    overflow: hidden;
+}
+
+.gallery .item .image img {
+    float: left;
+}
+
+.gallery .item .title {
+    height: 50px;
+    padding-top: 5px;
+    padding-left: 9px;
+    background: url('../images/gallery-title-bg.png') no-repeat 0 0;
+}
+
+.gallery .item .title h3 {
+    color: #666;
+    font-size: 14px;
+}
+
+.gallery .item .title p {
+    color: #999;
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.gallery .item .desc {
+    color: #666;
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tab-content {
+
+}
+
+.tab-content h2 {
+    margin-left: 21px;
+}
+
+.tab-content .tabs {
+    height: 42px;
+    margin: 0 19px;
+    background: url('../images/tabs-bg.png') repeat-x;
+    border: 1px #ececec solid;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.tab-content .tabs li {
+    display: inline-block;
+}
+
+.tab-content .tabs a {
+    color: #999;
+    font-size: 14px;
+    line-height: 42px;
+    margin-right: -4px;
+    display: block;
+    padding: 0 12px;
+    border-right: 1px #ececec solid;
+}
+
+.tab-content .tabs .active {
+
+}
+
+.tab-content .tabs .active a {
+    color: #666;
+    line-height: 43px;
+    position: relative;
+    top: 0;
+    background: #fff;
+}
+
+.tab-content .content {
+    color: #333;
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-bottom: 32px;
+    padding-bottom: 28px;
+    border: 1px #ececec solid;
+    border-top: none;
+}
+
+.tab-content .content .underline {
+    margin: 0 20px;
+    padding: 30px 0 10px 0;
+    display: block;
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+.tab-content .content .bottom {
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.tab-content .content .list {
+    color: #333;
+    float: left;
+    margin-top: 12px;
+    margin-left: 40px;
+    list-style-image: url('../images/mark-arrow.png');
+}
+
+.tab-content .content .list li {
+    padding-left: 3px;
+    line-height: 20px;
+}
+
+.tab-content .content .images {
+    float: right;
+    position: relative;
+    right: -12px;
+    padding-top: 12px;
+}
+
+.tab-content .content .thumb {
+    width: 280px;
+    float: left;
+    margin-right: 27px;
+    vertical-align: top;
+}
+
+.tab-content .content .thumb img {
+    display: inline;
+    margin-right: 8px;
+    padding: 2px;
+    border: 1px #f1f1f1 solid;
+}
+
+.tab-content .content .thumb h4 {
+    color: #333;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.tab-content .content .thumb p {
+    color: #999;
+    line-height: 20px;
+    display: inline;
+
+}
+
+.footer {
+    border-top: 1px #e5e5e5 solid;
+    clear: both;
+    overflow: hidden;
+    margin: 0 20px;
+    margin-bottom: 84px;
+    padding-bottom: 20px;
+}
+
+.footer li {
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+.footer li:last-child {
+    border: none;
+}
+
+.footer h3 {
+    color: #ffad19;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 35px;
+    padding-top: 7px;
+}
+
+.footer a {
+    color: #666;
+    font-size: 12px;
+    line-height: 29px;
+}
+
+.footer .single,
+.footer .cursus,
+.footer .articles {
+    float: left;
+    margin-left: 1px;
+}
+
+.footer .single,
+.footer .cursus {
+    width: 178px;
+}
+
+.footer .single {
+    margin-right: 64px;
+}
+
+.footer .cursus {
+    margin-right: 45px;
+}
+
+.footer .single li,
+.footer .cursus li {
+    padding-left: 2px;
+}
+
+.footer .articles {
+    width: 458px;
+}
+
+.footer .articles li {
+    padding-top: 9px;
+    padding-left: 32px;
+    padding-bottom: 8px;
+    background: url('../images/mark-page.png') no-repeat 1px 9px;
+}
+
+.footer .articles .title {
+    color: #666;
+    font-size: 12px;
+    padding-top: 2px;
+    line-height: 12px;
+    display: block;
+}
+
+.footer .articles .desc {
+    color: #aaa;
+    font-size: 11px;
+    line-height: 14px;
+    padding-top: 6px;
+    display: block;
+}

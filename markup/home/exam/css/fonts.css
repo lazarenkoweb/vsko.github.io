@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'OleoScript';
+	src: url('../fonts/oleoscript-regular.eot');
+	src: url('../fonts/oleoscript-regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oleoscript-regular.woff') format('woff'),
+	url('../fonts/oleoscript-regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OleoScript';
+	src: url('../fonts/oleoscript-bold.eot');
+	src: url('../fonts/oleoscript-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/oleoscript-bold.woff') format('woff'),
+		url('../fonts/oleoscript-bold.ttf')  format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Oxygen';
+	src: url('../fonts/oxygen-regular.eot');
+	src: url('../fonts/oxygen-regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oxygen-regular.woff') format('woff'),
+	url('../fonts/oxygen-regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OxygenMono';
+	src: url('../fonts/oxygenmono-regular.eot');
+	src: url('../fonts/oxygenmono-regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/oxygenmono-regular.woff') format('woff'),
+		url('../fonts/oxygenmono-regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
