@@ -1,20 +1,11 @@
 <!-- TODO:
-        - Сделать тройной контейнер before, after
-        - Добавить тени
-            - добавить текстовую тень в меню
-            - добавить текстовую тень в кнопку
-            - добавить текстовую тень в тайтл и подпись превью
-            - добавить текстовую тень в описание под превью
-            - добавить тень в блок пикслайдер
-            - добавить тень в блок контейнера
         - Реализовать пикслайдер
-            - добавить картинки
-            - добавить навигацию с кнопками и описанием
-            - изменять картинки через навигацию
-        - Реализовать выпадающее меню
+            ~ изменять картинки через навигацию
         - Реализовать ховер превью в галереи
+            - фон тайтла
             - оверлей
             - кнопки
+        - Реализовать выпадающее меню
 -->
 <!DOCTYPE html>
 <html>
@@ -24,7 +15,7 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/common.css" />
 </head>
-<body>
+<body class="lifted">
 <div class="container">
     <div class="header">
         <div class="logo">
@@ -42,8 +33,19 @@
     </div>
     <div class="banner">
         <div class="picslider">
-
+            <div class="image">
+                <img src="images/pic-1.png" alt="">
+            </div>
+            <div class="overlay">
+                <a href="#" class="prev">Prev</a>
+                <div class="panel">
+                    <div class="name">Great Lakehouse with Land</div>
+                    <div class="title"><span>from 21K</span> - in Texas, USA</div>
+                </div>
+                <a href="#" class="next">Next</a>
+            </div>
         </div>
+        <div class="shadows-2"></div>
         <div class="caption">
             <h1>The Amazing Spider-Man</h1>
             <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit.</p>
@@ -64,6 +66,11 @@
                     <p>Aenean eu leo quam. Pellentesque ornare sem lacinia.</p>
                 </div>
                 <div class="desc">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="overlay">
+                    <a href="#" class="download">Download</a>
+                    <a href="#" class="add">Add</a>
+                    <a href="#" class="browse">Browse</a>
+                </div>
             </div>
             <div class="item">
                 <div class="image"><img src="images/image-2.png" /></div>
@@ -72,14 +79,24 @@
                     <p>Cum sociis natoque penatibus et magnis dis parturient.</p>
                 </div>
                 <div class="desc">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="overlay">
+                    <a href="#" class="download">Download</a>
+                    <a href="#" class="add">Add</a>
+                    <a href="#" class="browse">Browse</a>
+                </div>
             </div>
-            <div class="item">
+            <div class="item active">
                 <div class="image"><img src="images/image-3.png" /></div>
                 <div class="title">
                     <h3>Tristique Dapibus</h3>
                     <p>Curabitur blandit tempus porttitor.</p>
                 </div>
                 <div class="desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</div>
+                <div class="overlay">
+                    <a href="#" class="download">Download</a>
+                    <a href="#" class="add">Add</a>
+                    <a href="#" class="browse">Browse</a>
+                </div>
             </div>
         </div>
     </div>
@@ -162,6 +179,7 @@
             </ul>
         </div>
     </div>
+    <div class="shadows"></div>
 </div>
 </body>
 </html>
