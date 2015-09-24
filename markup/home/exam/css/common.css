@@ -405,18 +405,18 @@ mark {
     margin: 3px;
     position: absolute;
     top: 0;
-    background: url('../images/gallery-item-overlay.png') no-repeat;
     opacity: 0;
+    background: url('../images/gallery-item-overlay.png') no-repeat;
 }
 
 .gallery .item .overlay .download,
 .gallery .item .overlay .add,
 .gallery .item .overlay .browse {
-    text-align: center;
-    display: inline-block;
+    text-indent: -3000px;
+    display: block;
     position: absolute;
     top: 44px;
-    background-color: #ccc;
+    background: url('../images/gallery-item-icons.png') no-repeat;
 }
 
 .gallery .item .overlay .download,
@@ -427,25 +427,32 @@ mark {
 .gallery .item .overlay .download,
 .gallery .item .overlay .browse {
     width: 36px;
-    line-height: 36px;
+    height: 36px;
     top: 57px;
 }
 
 .gallery .item .overlay .download {
     left: 83px;
-    background: url('../images/gallery-item-download.png') no-repeat;
+}
+
+.gallery .item .overlay .download:hover,
+.gallery .item .overlay .browse:hover {
+    background-position: 0 -36px;
 }
 
 .gallery .item .overlay .add {
     width: 62px;
-    line-height: 62px;
+    height: 62px;
     left: 121px;
-    background: url('../images/gallery-item-add.png') no-repeat;
+    background-position: -36px 0;
+}
+
+.gallery .item .overlay .add:hover {
+    background-position: -36px -62px;
 }
 
 .gallery .item .overlay .browse {
     left: 186px;
-    background: url('../images/gallery-item-browse.png') no-repeat;
 }
 
 .gallery .item.active > .desc + .overlay,
@@ -477,6 +484,37 @@ mark {
     padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.gallery .icon {
+    display: block;
+    position: relative;
+    background-color: #000;
+    background: url('../images/gallery-item-icons.png') no-repeat 0 0;
+}
+
+.gallery .download .icon {
+    width: 9px;
+    height: 10px;
+    top: 15px;
+    left: 13px;
+    background-position: 0 -73px;
+}
+
+.gallery .add .icon {
+    width: 19px;
+    height: 21px;
+    top: 22px;
+    left: 22px;
+    background-position: 0 -84px;
+}
+
+.gallery .browse .icon {
+    width: 13px;
+    height: 11px;
+    top: 14px;
+    left: 12px;
+    background-position: -9px -73px;
 }
 
 .tab-content h2 {
