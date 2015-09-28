@@ -60,6 +60,7 @@ body,h1,p {
     max-width: 1170px;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .portfolio h1 {
@@ -106,6 +107,7 @@ body,h1,p {
     margin-top: -4px;
     padding: 15px 15px;
     display: inline-block;
+    box-sizing: content-box;
     position: relative;
 }
 
