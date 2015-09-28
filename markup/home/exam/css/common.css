@@ -71,7 +71,7 @@ mark {
     top: -11px;
     right: 23px;
     z-index: -1px;
-    box-shadow: 1px 1px 10px 0 #000;
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,.7);
 }
 
 .footer:before {
@@ -209,9 +209,8 @@ mark {
     width: 164px;
     display: block;
     position: absolute;
-    /*margin-top: 4px;*/
     margin-left: 26px;
-    box-shadow: 0 1px 5px -3px rgba(0,0,0,.7);
+    /*box-shadow: 0 1px 5px -3px rgba(0,0,0,.7);*/
 
 }
 
@@ -359,67 +358,91 @@ mark {
     -moz-box-shadow: 0 23px 8px -23px rgba(0,0,0, .8), inset 0 0 3px 1px rgba(0,0,0,0.15);
     box-shadow: 0 23px 8px -23px rgba(0,0,0, .8), inset 0 0 3px 1px rgba(0,0,0,0.15);
     /*background: url('../images/picslider-bg.png');*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.picslider .image {
+.picslider .slide {
     overflow: hidden;
 }
 
-.picslider .image img {
-    margin: 5px;
-    float: left;
+.picslider > .slide input {
+    display: none;
 }
 
-.picslider .overlay {
+.picslider .slide .image {
+    width: 292px;
+    height: 188px;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.picslider .slide input ~ .image,
+.picslider .slide input ~ .controls {
+    display: none;
+}
+
+.picslider .slide input:checked ~ .image,
+.picslider .slide input:checked ~ .controls {
+    display: block;
+}
+
+.picslider .controls {
     position: absolute;
     top: 140px;
     left: 12px;
     text-align: left;
 }
 
-.picslider .overlay .panel,
-.picslider .overlay .prev,
-.picslider .overlay .next {
+.picslider .controls .panel,
+.picslider .controls .prev,
+.picslider .controls .next {
     height: 49px;
     margin-right: -4px;
     display: inline-block;
     background: url('../images/picslider-overlay.png');
 }
 
-.picslider .overlay .prev,
-.picslider .overlay .next {
+.picslider .controls .prev,
+.picslider .controls .next {
     width: 32px;
     line-height: 49px;
     text-align: center;
     text-indent: -3000px;
     position: relative;
     top: 4px;
+    cursor: pointer;
 }
 
-.picslider .overlay .prev,
-.picslider .overlay .panel {
+.picslider .controls .prev,
+.picslider .controls .panel {
     margin-right: -1px;
 }
 
-.picslider .overlay .panel {
+.picslider .controls .panel {
     width: 214px;
     background-position: -35px 0;
 }
 
-.picslider .overlay .panel .name,
-.picslider .overlay .panel .title {
+.picslider .controls .panel .name,
+.picslider .controls .panel .title {
     margin-left: 8px;
     display: block;
     position: relative;
     top: 6px;
 }
 
-.picslider .overlay .panel .name {
+.picslider .controls .panel .name {
     color: #f6f6f6;
     font-size: 13px;
 }
 
-.picslider .overlay .panel .title {
+.picslider .controls .panel .title {
     color: #676767;
     font-size: 11px;
     position: relative;
@@ -427,22 +450,22 @@ mark {
     left: 1px;
 }
 
-.picslider .overlay .panel .title span {
+.picslider .controls .panel .title span {
     color: #ffc14c;
 }
 
-.picslider .overlay .prev {
+.picslider .controls .prev {
 
 }
-.picslider .overlay .next {
+.picslider .controls .next {
     background-position: -252px 0;
 }
 
-.picslider .overlay .prev:hover {
+.picslider .controls .prev:hover {
     background-position: 0 49px;
 }
 
-.picslider .overlay .next:hover {
+.picslider .controls .next:hover {
     background-position: -252px 49px;
 }
 
@@ -612,6 +635,10 @@ mark {
     margin-left: 21px;
 }
 
+.tab-content > input {
+    display: none;
+}
+
 .tab-content .tabs {
     height: 42px;
     margin: 0 19px;
@@ -629,7 +656,7 @@ mark {
     display: inline-block;
 }
 
-.tab-content .tabs a {
+.tab-content .tabs label {
     color: #999;
     font-size: 14px;
     line-height: 42px;
@@ -637,13 +664,12 @@ mark {
     display: block;
     padding: 0 12px;
     border-right: 1px #ececec solid;
+    cursor: pointer;
 }
 
-.tab-content .tabs .active {
-
-}
-
-.tab-content .tabs .active a {
+.tab-content #tab-1:checked ~ .tabs li .tab-link-1,
+.tab-content #tab-2:checked ~ .tabs li .tab-link-2,
+.tab-content #tab-3:checked ~ .tabs li .tab-link-3 {
     color: #666;
     line-height: 43px;
     position: relative;
@@ -651,7 +677,22 @@ mark {
     background: #fff;
 }
 
-.tab-content .content {
+.tab-content input ~ .inner {
+    display: none;
+}
+
+.tab-content #tab-1:checked ~ .tab-content-1,
+.tab-content #tab-2:checked ~ .tab-content-2,
+.tab-content #tab-3:checked ~ .tab-content-3 {
+    display: block;
+}
+
+/*.tab-content #tab-1:checked ~ .inner,*/
+/*.tab-content #tab-2:checked ~ .inner {*/
+    /*display: block;*/
+/*}*/
+
+.tab-content .inner {
     color: #333;
     margin-left: 19px;
     margin-right: 19px;
@@ -661,19 +702,23 @@ mark {
     border-top: none;
 }
 
-.tab-content .content .underline {
+.tab-content .inner .spaces {
+    padding: 20px 0 0 20px;
+}
+
+.tab-content .inner .underline {
     margin: 0 20px;
     padding: 30px 0 10px 0;
     display: block;
     border-bottom: 1px #e5e5e5 solid;
 }
 
-.tab-content .content .bottom {
+.tab-content .inner .bottom {
     font-size: 12px;
     overflow: hidden;
 }
 
-.tab-content .content .list {
+.tab-content .inner .list {
     color: #333;
     float: left;
     margin-top: 12px;
@@ -681,39 +726,39 @@ mark {
     list-style-image: url('../images/mark-arrow.png');
 }
 
-.tab-content .content .list li {
+.tab-content .inner .list li {
     padding-left: 3px;
     line-height: 20px;
 }
 
-.tab-content .content .images {
+.tab-content .inner .images {
     float: right;
     position: relative;
     right: -12px;
     padding-top: 12px;
 }
 
-.tab-content .content .thumb {
+.tab-content .inner .thumb {
     width: 280px;
     float: left;
     margin-right: 27px;
     vertical-align: top;
 }
 
-.tab-content .content .thumb img {
+.tab-content .inner .thumb img {
     display: inline;
     margin-right: 8px;
     padding: 2px;
     border: 1px #f1f1f1 solid;
 }
 
-.tab-content .content .thumb h4 {
+.tab-content .inner .thumb h4 {
     color: #333;
     display: inline-block;
     padding-bottom: 2px;
 }
 
-.tab-content .content .thumb p {
+.tab-content .inner .thumb p {
     color: #999;
     line-height: 20px;
     display: inline;

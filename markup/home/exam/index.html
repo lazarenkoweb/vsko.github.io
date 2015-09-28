@@ -34,16 +34,33 @@
     </div>
     <div class="banner">
         <div class="picslider">
-            <div class="image">
-                <img src="images/pic-1.png" alt="">
-            </div>
-            <div class="overlay">
-                <a href="#" class="prev">Prev</a>
-                <div class="panel">
-                    <div class="name">Great Lakehouse with Land</div>
-                    <div class="title"><span>from 21K</span> - in Texas, USA</div>
+            <div class="slide">
+                <input type="radio" name="slide" id="slide-1" checked="checked" />
+                <div class="image">
+                    <img src="images/pic-1.png" />
                 </div>
-                <a href="#" class="next">Next</a>
+                <div class="controls">
+                    <label for="slide-2" class="prev">Prev</label>
+                    <div class="panel">
+                        <div class="name">Great Lakehouse with Land</div>
+                        <div class="title"><span>from 21K</span> - in Texas, USA</div>
+                    </div>
+                    <label for="slide-2" class="next">Next</label>
+                </div>
+            </div>
+            <div class="slide">
+                <input type="radio" name="slide" id="slide-2" />
+                <div class="image">
+                    <img src="images/pic-2.png" />
+                </div>
+                <div class="controls">
+                    <label for="slide-1" class="prev">Prev</label>
+                    <div class="panel">
+                        <div class="name">Great Lakehouse with Land</div>
+                        <div class="title"><span>from 21K</span> - in Texas, USA</div>
+                    </div>
+                    <label for="slide-1" class="next">Next</label>
+                </div>
             </div>
         </div>
         <div class="caption">
@@ -102,12 +119,25 @@
     </div>
     <div class="tab-content">
         <h2>Ta<mark>bbb</mark>s get your content in line</h2>
+
+        <input type="radio" name="tab" id="tab-1" checked="checked" />
+        <input type="radio" name="tab" id="tab-2" />
+        <input type="radio" name="tab" id="tab-3" />
+
         <ul class="tabs">
-            <li class="active"><a href="#">Tabbb One</a></li>
-            <li><a href="#">Tabb Two</a></li>
-            <li><a href="#">Tabb Three</a></li>
+            <li class="active">
+                <label for="tab-1" class="tab-link-1">Tabbb One</label>
+            </li>
+            <li>
+                <label for="tab-2" class="tab-link-2">Tabb Two</label>
+            </li>
+            <li>
+                <label for="tab-3" class="tab-link-3">Tabb Three</label>
+            </li>
         </ul>
-        <div class="content">
+
+
+        <div class="inner tab-content-1">
             <span class="underline">You content can be <mark class="stretched">highlighted</mark> like this.</span>
             <div class="bottom">
                 <ul class="list">
@@ -131,6 +161,15 @@
                 </div>
             </div>
         </div>
+
+        <div class="inner tab-content-2">
+            <div class="spaces">Content for Tabb Two</div>
+        </div>
+
+        <div class="inner tab-content-3">
+            <div class="spaces">Content for Tabb Three</div>
+        </div>
+
     </div>
     <div class="footer">
         <div class="single">
