@@ -1,7 +1,7 @@
 var name, message;
 
 do {
-    name = prompt('Введите Ваше имя: ', '');
+    name = prompt('Введите Ваше имя:', '');
 }
 while (name == '');
 
