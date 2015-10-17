@@ -9,20 +9,24 @@
     <meta http-equiv="pragma" content="no-cache" />
     <title>GoFrontend homeworks - Vitaliy Skorobagatko</title>
     <base href="http://vsko.github.io/" target="_blank" />
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <style>
         body,h1,ul,li { margin: 0; padding: 0; font-family: 'Droid Sans', sans-serif; }
-        .container { width: 100%; border-top: 3px black solid; text-align: center; }
-        .heading { font-size: 30px; padding: 50px 0; }
-        .title { font-size: 25px; text-transform: uppercase; }
-        .nav { list-style-type: none; }
-        .nav ul { margin: 0 0 0 25px; padding: 10px; }
+        .container { width: 100%; text-align: center; padding-bottom: 50px;  border-top: 3px #000 solid; }
+        .heading { color: #444; font-size: 30px; padding: 50px 0; }
+        .title { color: #444; font: 25px 'PT Sans', sans-serif; padding-top: 20px; text-transform: uppercase; }
+        .nav { list-style-type: none;  }
+        .nav ul { margin: 0 0 0 42px; padding: 10px; }
         .nav ul li { text-align: left; }
-        .nav > li { width: 150px; height: 174px; margin: 7px 5px; vertical-align: top; display: inline-block; box-shadow: 1px 1px 8px rgba(0,0,0,.3); }
-        .nav li > span { color: #fff; display: block; font-size: 20px; font-weight: 700; text-transform: uppercase; margin: 4px; padding: 2px 0; background: #000; }
-        .nav li:hover > span { color: #000; background: #fff; }
-        .nav a { color: black; text-decoration: none; }
+        .nav > li { width: 150px; height: 190px; margin: 7px 5px; vertical-align: top; display: inline-block; }
+        .nav li > span { color: #444; display: block; font-size: 20px; font-weight: 700; text-transform: uppercase; margin: 4px; padding: 2px 0; background: #fff; }
+        .nav li:hover > span { color: #fff; background: #444; }
+        .nav a { color: #444; text-decoration: none; }
         .nav a:hover { text-decoration: underline; }
+        .nav a+a { display: inline-block; text-decoration: none; visibility: hidden; }
+        .nav li:hover>a+a { font-size: 0; text-decoration: none; display: block; visibility: visible; position: absolute; }
+        .nav li:hover>a+a:after,a:hover+a:after { text-decoration: none; visibility: visible; position: relative; top: -17px; left: -23px; content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACH0lEQVQ4T6WSO4gaURSGz/iIRFRE4ivqpomvqJjFRyGJaBEk2CyCFqm1MZUuI0GbNGlCCklhkVYkYGEhFkEI2IgIeRCIS5oQCHYRQVYJk4mac4Z1dBk2zV4YBu49//f/99zDwDUXc009SAChUEi9XC6fIvjJdru9RwYymWyCvxbuN6bT6e9D00sAr9d7B0XvsMBzRbIzuVz+eDKZ/NydiwByXq1WH0mMjlAsFqHX64Ferwfch0gkAq1WC9Dg+3w+P57NZucEEQFut5tlGOYlbarVahiPx6BQKMQgw+EQcrkc6HQ6grywWq3PB4PB30PAZwTcJ0UymYRGoyG5hcfjAY7jQKlUfrXZbI+MRuMvEeByuTiMfoNUqVQK6vW6BBAMBmGxWFCyP9Fo9MhsNnMSAKYAjUYj3NfpdIqQdrsNlUoFsIkE4NLp9G2/38+LAIz3CauPqaBQKECz2YRqtQqZTAbK5TJ0Oh1BfPF9YVn2oVar3fcAAacIeEWWGE1wC4fDYDKZoFQqQbfbFQEqlepZrVZ7nc1m9wnsdvtNjP4B9cLwbDYbyOfzEI/HhYaORiMBgOsMm/wA987xuvsEdOLz+Y54nn+Pzby7g6zXa5pEUexwOE76/f4PEl+ag123DAaDDp+HxQQn6OjENwcs/oax38ZisTc7Z8kkHr5ZIpGgCbqFw7K1WCw8dZsaJtz5wvm/ADrEYjkOizYQCKyvElPdP56It1+FENuqAAAAAElFTkSuQmCC'); }
         .complete + ul > li a,.complete a { text-decoration: line-through; }
     </style>
 </head>
@@ -32,20 +36,104 @@
     <h2 class="title">JavaScript</h2>
     <ul class="nav">
         <li>
-            <span>Lesson 1</span>
+            <span class="complete">Lesson 1</span>
             <ul>
-                <li><a href="/javascript/home/lesson1/task1.html">Task 1</a></li>
-                <li><a href="/javascript/home/lesson1/task2.html">Task 2</a></li>
+                <li>
+                    <a href="/javascript/home/lesson1/task1.html">Task 1</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson1/task1.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson1/task2.html">Task 2</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson1/task2.js">git</a>
+                </li>
             </ul>
         </li>
         <li>
-            <span>Lesson 2</span>
+            <span class="complete">Lesson 2</span>
             <ul>
-                <li><a href="/javascript/home/lesson2/task1.html">Task 1</a></li>
-                <li><a href="/javascript/home/lesson2/task2.html">Task 2</a></li>
-                <li><a href="/javascript/home/lesson2/task3.html">Task 3</a></li>
-                <li><a href="/javascript/home/lesson2/task4.html">Task 4</a></li>
-                <li><a href="/javascript/home/lesson2/task5.html">Task 5</a></li>
+                <li>
+                    <a href="/javascript/home/lesson2/task1.html">Task 1</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson2/task1.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson2/task2.html">Task 2</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson2/task2.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson2/task3.html">Task 3</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson2/task3.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson2/task4.html">Task 4</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson2/task4.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson2/task5.html">Task 5</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson2/task5.js">git</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <span>Lesson 3</span>
+            <ul>
+                <li>
+                    <a href="/javascript/home/lesson3/task1.html">Task 1</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson3/task1.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson3/task2.html">Task 2</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson3/task2.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson3/task3.html">Task 3</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson3/task3.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson3/task4.html">Task 4</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson3/task4.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson3/task5.html">Task 5</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson3/task5.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson3/task6.html">Task 6</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson3/task6.js">git</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <span>Lesson 4</span>
+            <ul>
+                <li>
+                    <a href="/javascript/home/lesson4/task1.html">Task 1</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson4/task1.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson4/task2.html">Task 2</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson4/task2.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson4/task3.html">Task 3</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson4/task3.js">git</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <span>Lesson 5</span>
+            <ul>
+                <li>
+                    <a href="/javascript/home/lesson5/task1.html">Task 1</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson5/task1.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson5/task2.html">Task 2</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson5/task2.js">git</a>
+                </li>
+                <li>
+                    <a href="/javascript/home/lesson5/task3.html">Task 3</a>
+                    <a href="https://github.com/vsko/vsko.github.io/blob/master/javascript/home/lesson5/task3.js">git</a>
+                </li>
             </ul>
         </li>
     </ul>
