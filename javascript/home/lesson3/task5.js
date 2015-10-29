@@ -1,17 +1,19 @@
-var x=8, y=8;
+function makeChessboard(size) {
+    for (i=0; i<size; i++) {
+        if (i%size) document.write('\n');
 
-for (i=0; i<x; i++) {
-    if (i%x) document.write('\n');
+        for (j=0; j<size; j++) {
+            if (i%2 && j == 0) {
+                document.write(' ');
+            }
 
-    for (j=0; j<y; j++) {
-        if (i%2 && j == 0) {
-            document.write(' ');
-        }
+            document.write('#');
 
-        document.write('#');
-
-        if (j <= x-2) {
-            document.write(' ');
+            if (j <= size-2) {
+                document.write(' ');
+            }
         }
     }
 }
+
+makeChessboard(8);
