@@ -1,13 +1,12 @@
-var n = 1;
-
 function printNumbersTimeout() {
-    if (n <= 20) {
+    var n = 1;
+    var timerId = setTimeout(function go() {
         console.log(n);
-        setTimeout(printNumbersTimeout, 100);
-    } else {
-        clearTimeout(printNumbersTimeout);
-    }
-    n++;
+        if (n < 20) {
+            setTimeout(go, 100);
+            n++;
+        }
+    }, 100);
 }
 
 printNumbersTimeout();

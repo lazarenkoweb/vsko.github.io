@@ -1,13 +1,14 @@
-var n = 1;
-
 function printNumbersInterval() {
-    if (n <= 20) {
-        console.log(n);
-        n++;
-    }
-    else {
-        clearInterval(printNumbersInterval);
-    }
+    var n = 1;
+    var timerId = setInterval(function() {
+        if (n <= 20) {
+            console.log(n);
+            n++;
+        }
+        else {
+            clearInterval(timerId);
+        }
+    }, 100);
 }
 
-setInterval(printNumbersInterval, 100);
+printNumbersInterval();
