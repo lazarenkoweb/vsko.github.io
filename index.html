@@ -19,15 +19,18 @@
         .nav { list-style-type: none; margin-bottom: 30px; }
         .nav ul { margin: 0 0 0 42px; padding: 10px; }
         .nav ul li { text-align: left; }
-        .nav > li { width: 170px; /*height: 190px;*/ margin: 7px 5px; vertical-align: top; display: inline-block; }
-        .nav li > span { color: #444; display: block; font-size: 20px; font-weight: 700; text-transform: uppercase; margin: 4px; padding: 2px 0; }
-        .nav li:hover > span { color: #fff; background: #693590; }
+        .nav>li { width: 170px; /*height: 190px;*/ margin: 7px 5px; vertical-align: top; display: inline-block; }
+        .nav>li>span { color: #444; display: block; font-size: 20px; font-weight: 700; text-transform: uppercase; margin: 4px; padding: 2px 0; }
+        .nav>li:hover>span { color: #fff; background: #693590; }
         .nav a { color: #444; text-decoration: none; }
         .nav a:hover { text-decoration: underline; }
         .nav a+a { display: inline-block; text-decoration: none; visibility: hidden; }
         .nav li:hover>a+a { font-size: 0; text-decoration: none; display: block; visibility: visible; position: absolute; }
         .nav li:hover>a+a:after,a:hover+a:after { text-decoration: none; visibility: visible; position: relative; top: -17px; left: -23px; content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACH0lEQVQ4T6WSO4gaURSGz/iIRFRE4ivqpomvqJjFRyGJaBEk2CyCFqm1MZUuI0GbNGlCCklhkVYkYGEhFkEI2IgIeRCIS5oQCHYRQVYJk4mac4Z1dBk2zV4YBu49//f/99zDwDUXc009SAChUEi9XC6fIvjJdru9RwYymWyCvxbuN6bT6e9D00sAr9d7B0XvsMBzRbIzuVz+eDKZ/NydiwByXq1WH0mMjlAsFqHX64Ferwfch0gkAq1WC9Dg+3w+P57NZucEEQFut5tlGOYlbarVahiPx6BQKMQgw+EQcrkc6HQ6grywWq3PB4PB30PAZwTcJ0UymYRGoyG5hcfjAY7jQKlUfrXZbI+MRuMvEeByuTiMfoNUqVQK6vW6BBAMBmGxWFCyP9Fo9MhsNnMSAKYAjUYj3NfpdIqQdrsNlUoFsIkE4NLp9G2/38+LAIz3CauPqaBQKECz2YRqtQqZTAbK5TJ0Oh1BfPF9YVn2oVar3fcAAacIeEWWGE1wC4fDYDKZoFQqQbfbFQEqlepZrVZ7nc1m9wnsdvtNjP4B9cLwbDYbyOfzEI/HhYaORiMBgOsMm/wA987xuvsEdOLz+Y54nn+Pzby7g6zXa5pEUexwOE76/f4PEl+ag123DAaDDp+HxQQn6OjENwcs/oax38ZisTc7Z8kkHr5ZIpGgCbqFw7K1WCw8dZsaJtz5wvm/ADrEYjkOizYQCKyvElPdP56It1+FENuqAAAAAElFTkSuQmCC'); }
-        .complete + ul > li a,.complete a { text-decoration: line-through; }
+        .complete+ul>li a,.complete+ul>li span,.complete a { text-decoration: line-through; }
+        .codewars+ul { width: 85px; height: 40px; line-height: 3px; padding: 5px; margin-left: 0; list-style: none; }
+        .codewars+ul li { height: 14px; }
+        .codewars+ul li a { font-size: 12px; }
     </style>
 </head>
 <body>
@@ -71,13 +74,16 @@
                     <a href="javascript/home/lesson2/task5.html">Task 5</a>
                     <a href="https://github.com/vsko/vsko.github.io/blob/master/GoIT/javascript/home/lesson2/task5.js">git</a>
                 </li>
-                <li>
-                    <a href="javascript/home/lesson2/codewars1.html">Codewars 1</a>
-                    <a href="https://github.com/vsko/vsko.github.io/blob/master/GoIT/javascript/home/lesson2/codewars1.js">git</a>
-                </li>
-                <li>
-                    <a href="javascript/home/lesson2/codewars2.html">Codewars 2</a>
-                    <a href="https://github.com/vsko/vsko.github.io/blob/master/GoIT/javascript/home/lesson2/codewars2.js">git</a>
+                <li> 
+                    <span class="codewars">Codewars</span> 
+                    <ul> 
+                        <li> 
+                            <a href="https://github.com/vsko/vsko.github.io/blob/master/GoIT/javascript/home/lesson2/codewars1.js">Codewars 1</a> 
+                        </li> 
+                        <li> 
+                            <a href="https://github.com/vsko/vsko.github.io/blob/master/GoIT/javascript/home/lesson2/codewars2.js">Codewars 2</a> 
+                        </li> 
+                    </ul> 
                 </li>
             </ul>
         </li>
