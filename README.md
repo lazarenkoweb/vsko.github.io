@@ -3,4 +3,4 @@
 http://vsko.github.io
 
 ### Last Update
-- Moved all homeworks to GoIT directory
+- Moved all homeworks to the GoIT directory
