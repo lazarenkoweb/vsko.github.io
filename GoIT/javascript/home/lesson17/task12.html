@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Task 12</title>
+    <style>
+    #scroll-block {
+        width: 200px;
+        height: 100px;
+        margin: 10px 0;
+        padding: 10px;
+        border: 10px #ddd solid;
+        overflow: auto;
+    }
+    </style>
+</head>
+<body>
+<div id="scroll-block">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aspernatur atque dolor eius error eum exercitationem explicabo, fugiat maxime necessitatibus omnis quaerat qui quibusdam ratione recusandae soluta voluptas voluptatibus?
+</div>
+<button onclick="alert(document.getElementById('scroll-block').scrollBottom)">Показать размер прокрутки снизу</button>
+<script>
+if (!Element.prototype.scrollBottom) {
+    Object.defineProperty(Element.prototype, 'scrollBottom', {
+        get: function() {
+            return this.scrollHeight - this.scrollTop - this.clientHeight;
+        }
+    });
+}
+</script>
+</body>
+</html>

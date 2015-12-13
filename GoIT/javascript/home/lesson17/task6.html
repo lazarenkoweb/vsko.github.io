@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Task 6</title>
+</head>
+<body>
+
+<div id="container"></div>
+
+<script>
+var data = {
+    "Рыбы": {
+        "Форель": {},
+        "Щука": {}
+    },
+    "Деревья": {
+        "Хвойные": {
+            "Лиственница": {},
+            "Ель": {}
+        },
+        "Цветковые": {
+            "Берёза": {},
+            "Тополь": {}
+        }
+    }
+};
+
+function createList(container, data) {
+    container.appendChild(createNodes(data));
+}
+
+function createNodes(data) {
+    if (isEmptyObj(data)) {
+        return false;
+    }
+
+    var ul = document.createElement('ul');
+
+    for (var k in data) {
+        var li = document.createElement('li');
+            li.appendChild(document.createTextNode(k));
+
+        ul.appendChild(li);
+
+        var childs = createNodes(data[k]);
+        if (childs) {
+            li.appendChild(childs);
+        }
+    }
+
+    return ul;
+}
+
+function isEmptyObj(obj) {
+    for (var k in obj) {
+        return false;
+    }
+    return true;
+}
+
+var container = document.getElementById('container');
+createList(container, data);
+
+</script>
+</body>
+</html>

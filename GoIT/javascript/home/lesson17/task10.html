@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Task 10</title>
+    <style>
+    table { width: 700px; font-family: Arial, sans-serif; border-collapse: collapse; }
+    th,td { text-align: left; }
+    th { border-bottom: 3px #ccc solid; }
+    td { font-size: 14px; padding: 4px 2px 4px 2px; border-bottom: 1px #ccc solid; }
+    tr:nth-child(even) { background: #f9f9f9; }
+    </style>
+    <script>
+    window.onload = function() {
+        // My solution
+        var table = document.getElementsByTagName('table')[0];
+        sortTable(table, 3);
+
+        function sortTable(table, column) {
+            var tableData = [];
+
+            for (var i=1; i<table.rows.length; i++) {
+                tableData.push(table.rows[i]);
+            }
+
+            tableData.sort(function(a,b) {
+                return a.cells[column].innerText - b.cells[column].innerText;
+            });
+
+            for (var i=0; i<tableData.length; i++) {
+                table.rows[i+1].parentNode.insertBefore(tableData[i], table.rows[i+1]);
+            }
+        }
+    };
+    </script>
+</head>
+<body>
+<table>
+    <tr><th>Имя</th><th>Фамилия</th><th>Отчество</th><th>Возраст</th></tr>
+    <tr><td>Вася</td><td>Петров</td><td>Александрович</td><td>10</td></tr>
+    <tr><td>Петя</td><td>Иванов</td><td>Петрович</td><td>15</td></tr>
+    <tr><td>Владимир</td><td>Ленин</td><td>Ильич</td><td>9</td></tr>
+    <tr><td>Витя</td><td>Петросян</td><td>Филипович</td><td>14</td></tr>
+    <tr><td>Костя</td><td>Яроненко</td><td>Эдуардович</td><td>6</td></tr>
+    <tr><td>Дима</td><td>Беленко</td><td>Константинович</td><td>45</td></tr>
+    <tr><td>Галя</td><td>Семеножка</td><td>Бонифациевна</td><td>15</td></tr>
+    <tr><td>Митя</td><td>Ломко</td><td>Вальдемарович</td><td>11</td></tr>
+    <tr><td>Яна</td><td>Акименко</td><td>Николаевна</td><td>21</td></tr>
+    <tr><td>Валя</td><td>Денисенко</td><td>Анатольевна</td><td>27</td></tr>
+    <tr><td>Никита</td><td>Галустян</td><td>Ибрагимович</td><td>21</td></tr>
+    <tr><td>Костя</td><td>Марченко</td><td>Петрович</td><td>8</td></tr>
+    <tr><td>Аня</td><td>Бабенко</td><td>Эдуардовна</td><td>17</td></tr>
+    <tr><td>Генадий</td><td>Балашев</td><td>Митрофанович</td><td>19</td></tr>
+    <tr><td>Витя</td><td>Галаев</td><td>Владимирович</td><td>16</td></tr>
+    <tr><td>Анжела</td><td>Полякова</td><td>Петровна</td><td>20</td></tr>
+    <tr><td>Толик</td><td>Меляев</td><td>Никифорович</td><td>22</td></tr>
+    <tr><td>Валя</td><td>Андрошенко</td><td>Александровна</td><td>34</td></tr>
+    <tr><td>Яна</td><td>Ахметова</td><td>Борисовна</td><td>11</td></tr>
+    <tr><td>Митя</td><td>Зелецкий</td><td>Леонидович</td><td>8</td></tr>
+    <tr><td>Вася</td><td>Гагарин</td><td>Петрович</td><td>25</td></tr>
+    <tr><td>Петя</td><td>Простаков</td><td>Владиславович</td><td>21</td></tr>
+    <tr><td>Коля</td><td>Сковородкин</td><td>Борисович</td><td>14</td></tr>
+    <tr><td>Вазген</td><td>Чипуленко</td><td>Константинович</td><td>12</td></tr>
+    <tr><td>Маша</td><td>Кваскина</td><td>Измаиловна</td><td>9</td></tr>
+    <tr><td>Эдик</td><td>Молчун</td><td>Генадьевич</td><td>34</td></tr>
+    <tr><td>Витя</td><td>Незнакомов</td><td>Константинович</td><td>28</td></tr>
+    <tr><td>Саша</td><td>Черезпреченко</td><td>Александрович</td><td>11</td></tr>
+    <tr><td>Лена</td><td>Шматкова</td><td>Петровна</td><td>13</td></tr>
+    <tr><td>Карина</td><td>Бабуленко</td><td>Владимировна</td><td>20</td></tr>
+    <tr><td>Ирка</td><td>Прививкина</td><td>Галустяновна</td><td>44</td></tr>
+    <tr><td>Макс</td><td>Гандурас</td><td>Петрович</td><td>10</td></tr>
+    <tr><td>Валера</td><td>Перченко</td><td>Петрович</td><td>27</td></tr>
+    <tr><td>Санька</td><td>Мармышкин</td><td>Александрович</td><td>54</td></tr>
+    <tr><td>Толик</td><td>Беляшов</td><td>Петрович</td><td>42</td></tr>
+    <tr><td>Вася</td><td>Карандашев</td><td>Максимовна</td><td>16</td></tr>
+    <tr><td>Жора</td><td>Абжора</td><td>Анатольевна</td><td>26</td></tr>
+    <tr><td>Коля</td><td>Тихоня</td><td>Михоилович</td><td>12</td></tr>
+    <tr><td>Валька</td><td>Встанька</td><td>Борисовна</td><td>8</td></tr>
+    <tr><td>Аня</td><td>Штангина</td><td>Александровна</td><td>16</td></tr>
+    <tr><td>Миша</td><td>Припевкин</td><td>Михаилович</td><td>7</td></tr>
+    <tr><td>Женя</td><td>Боков</td><td>Евгеньевич</td><td>15</td></tr>
+    <tr><td>Вадик</td><td>Садик</td><td>Петрович</td><td>18</td></tr>
+    <tr><td>Борис</td><td>Любушкин</td><td>Владимирович</td><td>19</td></tr>
+    <tr><td>Настя</td><td>Кочкина</td><td>Эдуардовна</td><td>23</td></tr>
+    <tr><td>Вика</td><td>Дика</td><td>Владиславовна</td><td>21</td></tr>
+    <tr><td>Маша</td><td>Щепоткина</td><td>Ибрагимовна</td><td>37</td></tr>
+    <tr><td>Ира</td><td>Комкова</td><td>Львовна</td><td>15</td></tr>
+</table>
+</body>
+</html>

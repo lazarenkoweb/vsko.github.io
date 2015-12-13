@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Task 3</title>
+</head>
+<body>
+<div>Это</div>
+<div>Элементы</div>
+
+<script>
+var elem = document.createElement('div');
+elem.innerHTML = '<b>Новый элемент</b>';
+
+function insertAfter(elem, refElem) {
+    return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+}
+
+var body = document.body;
+
+// вставить elem после первого элемента
+insertAfter(elem, body.firstChild);
+
+// вставить elem за последним элементом
+insertAfter(elem, body.lastChild);
+
+console.log(body.childNodes);
+</script>
+</body>
+</html>

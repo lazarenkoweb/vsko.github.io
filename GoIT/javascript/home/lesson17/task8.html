@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Task 8</title>
+    <style>
+    .hours { color: red; }
+    .minutes { color: green; }
+    .seconds { color: blue; }
+    .hours, .minutes, .seconds { font-size: 24px; }
+    </style>
+</head>
+<body>
+
+<input type="button" onclick="clockStart()" value="Start">
+<input type="button" onclick="clockStop()" value="Stop">
+
+<div id="time">
+    <span class="hours">hh</span>:<span class="minutes">mm</span>:<span class="seconds">ss</span>
+</div>
+
+<script>
+var timerId;
+
+window.onload = clockStart;
+
+function clockUpdate() {
+    var time = document.getElementById('time');
+    var date = new Date();
+    var hours = addZero(date.getHours());
+    var minutes = addZero(date.getMinutes());
+    var seconds = addZero(date.getSeconds());
+
+    time.children[0].innerText = hours;3
+    time.children[1].innerText = minutes;
+    time.children[2].innerText = seconds;
+}
+
+function clockStart() {
+    timerId = setInterval(clockUpdate, 1000);
+}
+
+function clockStop() {
+    clearInterval(timerId);
+}
+
+function addZero(num) {
+    if (num < 10) {
+        return '0' + num;
+    } else {
+        return num;
+    }
+}
+</script>
+</body>
+</html>

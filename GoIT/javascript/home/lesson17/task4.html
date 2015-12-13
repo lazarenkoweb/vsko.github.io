@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Task 4</title>
+</head>
+<body>
+<table id="table">
+    <tr>
+        <td>Это</td>
+        <td>Все</td>
+        <td>Элементы DOM</td>
+    </tr>
+</table>
+
+<ol id="ol">
+    <li>Вася</li>
+    <li>Петя</li>
+    <li>Маша</li>
+    <li>Даша</li>
+</ol>
+
+<script>
+function removeChildren(elem) {
+    while (elem.lastChild) {
+        elem.removeChild(elem.lastChild);
+    }
+}
+
+var table = document.getElementById('table');
+var ol = document.getElementById('ol');
+
+removeChildren(table); // очищает таблицу
+removeChildren(ol); // очищает список
+
+console.log(table);
+console.log(ol);
+</script>
+</body>
+</html>
