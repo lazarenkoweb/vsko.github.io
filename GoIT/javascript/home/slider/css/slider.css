@@ -1,0 +1,73 @@
+.slider {
+    margin: 50px;
+}
+
+.slider .images {
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .wrapper {
+    font-size: 0;
+    height: 400px;
+    white-space: nowrap;
+    position: absolute;
+    /*transition: margin .5s ease-out;*/
+}
+
+.slider .navigation {
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .navigation .prev,
+.slider .navigation .next {
+    color: #444;
+    font: 28px Times;
+    float: left;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.slider .navigation .prev:hover,
+.slider .navigation .next:hover {
+    color: #3cc8c1;
+}
+
+.slider .navigation ul {
+    margin: 10px 0;
+    padding: 0;
+    float: right;
+    list-style: none;
+}
+
+.slider .navigation .item {
+    display: inline-block;
+    text-indent: -3000px;
+}
+
+.slider .navigation .item a {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+    display: block;
+    border: 2px #444 solid;
+    border-radius: 18px;
+}
+
+.slider .navigation .item a:hover {
+    width: 14px;
+    height: 14px;
+    border: 2px #3cc8c1 solid;
+}
+
+.slider .navigation .item .active,
+.slider .navigation .item .active:hover {
+    border: 2px #444 solid;
+    background: #444;
+    cursor: default;
+}

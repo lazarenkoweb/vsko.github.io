@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Slider JS</title>
+    <link rel="stylesheet" href="css/slider.css"/>
+</head>
+<body>
+<div class="slider">
+    <div class="images">
+        <div class="wrapper">
+            <img src="http://lorempixel.com/800/400/abstract/1/" />
+            <img src="http://lorempixel.com/800/400/transport/2/" />
+            <img src="http://lorempixel.com/800/400/animals/3/" />
+            <img src="http://lorempixel.com/800/400/technics/4/" />
+            <img src="http://lorempixel.com/800/400/nature/5/" />
+            <img src="http://lorempixel.com/800/400/nightlife/6/" />
+            <img src="http://lorempixel.com/800/400/city/7/" />
+        </div>
+    </div>
+    <div class="navigation">
+        <a href="#" class="prev">&lt;</a>
+        <a href="#" class="next">&gt;</a>
+        <ul class="pagination"></ul>
+    </div>
+</div>
+<script src="js/slider.js"></script>
+<script>
+new Slider('.slider', {
+    direction: 'horizontal',
+    //direction: 'vertical',
+    currentSlide: 4,
+    changeInterval: 500
+});
+</script>
+</body>
+</html>
