@@ -1,0 +1,1 @@
+[Slider](https://github.com/vsko/vsko.github.io/tree/master/GoIT/javascript/home/slider)
