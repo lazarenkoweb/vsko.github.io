@@ -12,7 +12,11 @@ $(function() {
 
     // Получить локальные данные
     ToDo.prototype.getLocalData = function(id) {
-        return JSON.parse(this.ls[id]);
+        if (this.ls[id]) {
+            return JSON.parse(this.ls[id]);
+        } else {
+            return [];
+        }
     };
 
     // Записать локальные данные
