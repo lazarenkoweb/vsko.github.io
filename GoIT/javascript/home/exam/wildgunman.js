@@ -7,7 +7,8 @@
             'closeModal': document.getElementById('close-modal'),
             'help': document.getElementById('help'),
             'play': document.querySelector('.button.play'),
-            'screen': document.querySelector('.screen')
+            'screen': document.querySelector('.screen'),
+            'message': document.querySelector('.message')
         };
 
         this.init();
@@ -38,7 +39,7 @@
         this.dom.play.classList.add('replay');
         this.dom.play.innerText = 'Replay';
 
-        //this.sound('sfx/intro.m4a').play();
+        this.sound('sfx/win.m4a').play();
 
         // <div class="gunman gunman1 step1"></div>
         //var gunman = document.createDocumentFragment();
@@ -48,6 +49,7 @@
         gunman.setAttribute('class', 'gunman gunman1 step1');
         this.dom.screen.appendChild(gunman);
         this.move(gunman);
+        this.message('Hello!!!');
     };
 
     WildGunman.prototype.move = function(character) {
@@ -69,6 +71,12 @@
 
     WildGunman.prototype.sound = function(sfx) {
         return new Audio(sfx);
+    };
+
+    WildGunman.prototype.message = function(text) {
+        this.dom.message.style.display = 'block';
+        this.dom.message.style.left = '28%';
+        this.dom.message.innerText = text;
     };
 
     window.wildGunman = new WildGunman();
