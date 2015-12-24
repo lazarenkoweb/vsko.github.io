@@ -4,4 +4,4 @@ http://vsko.github.io
 
 ### Last Update
 - Moved all homeworks to the GoIT directory
-- Left to do one homework and one exam
+- I have one task of homework and one exam to do
