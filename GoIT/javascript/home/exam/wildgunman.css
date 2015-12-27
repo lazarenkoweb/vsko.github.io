@@ -7,38 +7,6 @@
     transition: all 1s ease-out;
 }
 
-.button {
-    text-align: center;
-    position: absolute;
-    z-index: 9000;
-    cursor: pointer;
-}
-
-.button.settings,
-.button.help {
-    color: #ccc;
-    width: 20px;
-    line-height: 20px;
-    border-radius: 10px;
-    background: #555;
-}
-
-.button.settings:hover,
-.button.help:hover {
-    color: black;
-    background: white;
-}
-
-.button.settings {
-    top: 5px;
-    left: 5px;
-}
-
-.button.help {
-    top: 5px;
-    left: 30px;
-}
-
 .overlay {
     width: 100%;
     height: 100%;
@@ -46,16 +14,20 @@
     z-index: 8000;
 }
 
-.overlay.nogame {
+.overlay.played {
     background: rgba(0,0,0,.5);
 }
 
 .overlay.killed {
+    height: 460px;
+    top: 114px;
     background: rgba(255,0,0,.5);
 }
 
-.overlay.hit {
-    background: rgba(255,255,255,.7);
+.overlay.continue {
+    height: 460px;
+    top: 114px;
+    background: rgba(255,255,255,.4);
 }
 
 .overlay .button {
@@ -67,23 +39,29 @@
     top: 50%;
     left: 50%;
     margin: -35px 0 0 -100px;
+    padding: 0 20px;
     border: 3px white solid;
     transition: all .2s ease-out;
 }
 
-.overlay .button.play {
+.overlay .button {
+    text-align: center;
+    position: absolute;
+    z-index: 9000;
+    cursor: pointer;
 }
 
 .overlay .button.play:hover {
     border-color: gray;
 }
 
-.overlay .button.replay {
-
+.overlay .button.replay:hover {
+    border-color: red;
 }
 
-.overlay .button.replay:hover {
-    border-color: green;
+.overlay .button.continue:hover {
+    border-color: black;
+    background: black;
 }
 
 .modal {
@@ -94,25 +72,30 @@
     top: 50%;
     left: 50%;
     margin: -180px 0 0 -250px;
-    padding: 40px;
+    padding: 30px 0px;
     box-shadow: 10px 10px 0 #000;
     z-index: 9900;
 
     display: none;
 }
 
+.modal .inner {
+    height: 230px;
+    padding: 0 30px 30px 30px;
+    overflow-y: scroll;
+}
+
+.modal .inner h3 {
+    margin: 0 0 10px 0;
+}
+
 .modal .close {
     color: black;
     font-size: 30px;
     position: absolute;
-    top: 0;
-    right: 15px;
+    top: -5px;
+    right: 10px;
     text-decoration: none;
-}
-
-.modal .inner {
-    height: 300px;
-    overflow-y: scroll;
 }
 
 .panel {
@@ -120,6 +103,7 @@
     height: 114px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    z-index: 9888;
 }
 
 .panel .scores,
@@ -165,6 +149,38 @@
     display: block;
 }
 
+.toolbar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0;
+    white-space: nowrap;
+    z-index: 9000;
+}
+
+.toolbar .button {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.toolbar .button.reset,
+.toolbar .button.help {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #555;
+}
+
+.toolbar .button.reset:hover,
+.toolbar .button.help:hover {
+    color: black;
+    background: white;
+}
+
 .screen {
     height: 460px;
     background: black url('images/bg.png') no-repeat;
@@ -179,15 +195,50 @@
 .message {
     font-size: 25px;
     font-weight: bold;
+    line-height: 40px;
     text-transform: uppercase;
-    padding: 7px 15px;
+    padding: 0 40px 8px 45px;
     position: absolute;
     top: 8px;
     left: 120px;
     z-index: 7000;
     background: white;
-    border-radius: 10px;
+    border-radius: 30px;
+    -webkit-border-top-left-radius: 60px;
+    -moz-border-radius-topleft: 60px;
+    border-top-left-radius: 60px;
+    -webkit-border-top-right-radius: 50px;
+    -moz-border-radius-topright: 50px;
+    border-top-right-radius: 50px;
     display: none;
+}
+
+.message.arrow-left:after {
+    width: 90%;
+    height: 80px;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    border-radius: 30px;
+    background: white;
+    content: '';
+    z-index: -2;
+}
+
+.message.arrow-left:before {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -12px;
+    left: 12px;
+    border-radius: 10px;
+    -webkit-border-top-right-radius: 80px;
+    -moz-border-radius-topright: 80px;
+    border-top-right-radius: 80px;
+    background: white;
+    transform: rotate(-12deg);
+    content: '';
+    z-index: -1;
 }
 
 .gunman {
