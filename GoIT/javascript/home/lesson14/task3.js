@@ -6,4 +6,5 @@ function f() {
     console.log("привет");
 }
 
-f.defer(1000);
+f.defer(4000);
+console.log(1);
