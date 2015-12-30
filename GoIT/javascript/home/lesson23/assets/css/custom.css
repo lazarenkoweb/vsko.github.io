@@ -157,6 +157,7 @@ a:hover {
     position: absolute;
     border: 1px #eee solid;
     opacity: .5;
+    transition: all .2s ease-out;
 }
 
 .bigcart .product-item.pan {
