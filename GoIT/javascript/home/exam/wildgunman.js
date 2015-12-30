@@ -2,7 +2,7 @@
     function WildGunman() {
         this.setting = {
             'sound': 'modern', // classic, modern
-            'volume': 0.1
+            'volume': 0.5
         };
 
         this.dom = {
